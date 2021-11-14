@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Abyssinian.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.animalList</a> &gt; <span class="el_source">Abyssinian.java</span></div><h1>Abyssinian.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.nwmissouri.animalList;
+
+/**
+ *
+ * @author Vamsi krishna Areti (S5449902)
+ */
+//class Abyssinian is extending the animal class
+public class Abyssinian extends Animal {
+    //creating constructor for Abyssinian class
+   public Abyssinian(String name) 
+   {
+<span class="nc" id="L17">       super(name);</span>
+<span class="nc" id="L18">   }</span>
+   //overriding the talk method
+    @Override
+   public void speak()
+    {
+<span class="nc" id="L23">        System.out.println(&quot;I'm Abyssinia.&quot;);</span>
+<span class="nc" id="L24">    }</span>
+   //overriding the eat method
+   
+    public void eat()
+    {
+<span class="nc" id="L29">        System.out.println(&quot;I eat Purina Pro Plan True Nature Adult Grain Free Natural Salmon &amp; Egg Recipe.&quot;);</span>
+<span class="nc" id="L30">    }</span>
+    //overriding the walk method
+   @Override
+    public void move()
+    {
+<span class="nc" id="L35">        System.out.println(&quot;I walk on four legs.&quot;);</span>
+<span class="nc" id="L36">    }</span>
+     public static void main(String[] args) {
+<span class="nc" id="L38">        var aby = new Abyssinian(&quot;Areti&quot;);</span>
+<span class="nc" id="L39">        aby.speak();</span>
+<span class="nc" id="L40">        aby.move();</span>
+<span class="nc" id="L41">        aby.eat();</span>
+<span class="nc" id="L42">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

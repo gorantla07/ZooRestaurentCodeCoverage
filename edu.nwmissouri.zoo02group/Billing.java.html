@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Billing.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo02group</a> &gt; <span class="el_source">Billing.java</span></div><h1>Billing.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo02group;
+
+import java.util.ArrayList;
+
+/**
+ * this class is for printing the bill
+ * @author Tejaswini Challa
+ */
+public class Billing {
+<span class="fc" id="L14">    private static double total_price=0.0;</span>
+<span class="fc" id="L15">    Checkin check=new Checkin();</span>
+
+    /**
+     *
+     */
+<span class="fc" id="L20">    public static double enterfee=0.00;</span>
+
+    /**
+     *
+     */
+<span class="fc" id="L25">    public Billing(){}</span>
+
+    /**
+     *
+     * @return total_price
+     */
+    public double getTotal_price() {
+<span class="fc" id="L32">        return total_price;</span>
+    }
+
+    /**
+     *
+     * @param tp
+     */
+    public void setTotal_price(double tp) {
+<span class="fc" id="L40">        this.enterfee=tp;</span>
+<span class="fc" id="L41">        this.total_price += tp;</span>
+<span class="fc" id="L42">    }</span>
+
+    /**
+     * calculating total price
+     */
+    public void findCost(){
+        
+        
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        for(OrderedDrink o:check.getDrinkOrders()){</span>
+<span class="fc" id="L51">            this.total_price+=o.getDrinkName().getDrinkPrice();</span>
+<span class="fc" id="L52">        }</span>
+        
+<span class="fc bfc" id="L54" title="All 2 branches covered.">        for(OrderedItem o1:check.getItemOrders()){</span>
+<span class="fc" id="L55">            this.total_price+=o1.getItemName().getItemPrize();</span>
+<span class="fc" id="L56">        }</span>
+        
+<span class="fc" id="L58">    }</span>
+
+    /**
+     * Returning bill formate 
+     * @param id
+     * @return s Bill formate returning 
+     */
+    public String printBill(int id,int n){
+<span class="fc" id="L66">       String s=&quot;&quot;;</span>
+<span class="fc" id="L67">       Checkin c=new Checkin();</span>
+<span class="fc bfc" id="L68" title="All 2 branches covered.">       if(n==1){</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">       for(Visitor v:Visitor.getVisitorList())</span>
+       {
+<span class="fc bfc" id="L71" title="All 2 branches covered.">           if(v.getVisitorId()==id)</span>
+           {
+<span class="fc" id="L73">               s=s+&quot;-------------------------------------------------------\n\t\t     Visitor Details\n-------------------------------------------------------\n&quot;+v.toString()+&quot;\n&quot;;</span>
+           }
+<span class="fc" id="L75">       }</span>
+<span class="fc" id="L76">       s=s+&quot;-------------------------------------------------------\n&quot;+String.format(&quot;%-35s&quot;,&quot;SELECTED ITEMS&quot;)+&quot;PRICES\n-------------------------------------------------------\n&quot;</span>
+<span class="fc" id="L77">               +String.format(&quot;%-35s&quot;, &quot;ENTRANCE FEE&quot;)+&quot;&quot;+this.enterfee+&quot;\n&quot;;</span>
+<span class="fc bfc" id="L78" title="All 2 branches covered.">       for(OrderedItem o:check.getItemOrders()){</span>
+<span class="fc" id="L79">            s=s+String.format(&quot;%-35s&quot;, o.getItemName())+&quot;&quot;+o.getItemName().getItemPrize()+&quot;\n&quot;;</span>
+<span class="fc" id="L80">        }</span>
+<span class="fc bfc" id="L81" title="All 2 branches covered.">        for(OrderedDrink o:check.getDrinkOrders()){</span>
+<span class="fc" id="L82">            s=s+String.format(&quot;%-35s&quot;,o.getDrinkName())+&quot;&quot;+o.getDrinkName().getDrinkPrice()+&quot;\n&quot;;</span>
+<span class="fc" id="L83">        }</span>
+<span class="fc" id="L84">        s=s+&quot;-------------------------------------------------------\nTotal Price:\t\t\t     &quot;+Math.round(total_price*100.0)/100.0+&quot;\n-------------------------------------------------------&quot;;</span>
+       }
+<span class="fc bfc" id="L86" title="All 2 branches covered.">       if(n==2){</span>
+<span class="fc bfc" id="L87" title="All 2 branches covered.">           for(Staff st:Staff.getStaffList()){</span>
+<span class="fc bfc" id="L88" title="All 2 branches covered.">               if(st.getStaffId()==id){</span>
+<span class="fc" id="L89">                   s=s+&quot;-------------------------------------------------------\n\t\t     Staff Details\n-------------------------------------------------------\n&quot;+st.toString()+&quot;\n&quot;;</span>
+               }
+<span class="fc" id="L91">           }</span>
+<span class="fc" id="L92">           s=s+&quot;-------------------------------------------------------\n&quot;+String.format(&quot;%-35s&quot;,&quot;SELECTED ITEMS&quot;)+&quot;PRICES\n-------------------------------------------------------\n&quot;</span>
+<span class="fc" id="L93">               +String.format(&quot;%-35s&quot;, &quot;ENTRANCE FEE&quot;)+&quot;&quot;+this.enterfee+&quot;\n&quot;;</span>
+<span class="fc bfc" id="L94" title="All 2 branches covered.">       for(OrderedItem o:StaffCheckin.getItemOrders()){</span>
+<span class="fc" id="L95">            s=s+String.format(&quot;%-35s&quot;, o.getItemName())+&quot;&quot;+o.getItemName().getItemPrize()+&quot;\n&quot;;</span>
+<span class="fc" id="L96">            this.total_price+=o.getItemName().getItemPrize();</span>
+<span class="fc" id="L97">        }</span>
+<span class="fc bfc" id="L98" title="All 2 branches covered.">        for(OrderedDrink o:StaffCheckin.getDrinkOrders()){</span>
+<span class="fc" id="L99">            s=s+String.format(&quot;%-35s&quot;,o.getDrinkName())+&quot;&quot;+o.getDrinkName().getDrinkPrice()+&quot;\n&quot;;</span>
+<span class="fc" id="L100">            this.total_price+=o.getDrinkName().getDrinkPrice();</span>
+            
+<span class="fc" id="L102">        }</span>
+<span class="fc" id="L103">        s=s+&quot;-------------------------------------------------------\nTotal Price:\t\t\t     &quot;+Math.round(total_price*100.0)/100.0+&quot;\n-------------------------------------------------------&quot;;</span>
+       }
+<span class="fc" id="L105">        return s;</span>
+   }
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>LigerGroup.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.animalList</a> &gt; <span class="el_source">LigerGroup.java</span></div><h1>LigerGroup.java</h1><pre class="source lang-java linenums">package edu.nwmissouri.animalList;
+import java.util.ArrayList;
+
+/**
+ * Provides methods to create and run a group of Aardvarks
+ *
+ * @author Revanth Pagilla
+ */
+<span class="nc" id="L9">public class LigerGroup {</span>
+
+    private static ArrayList&lt;Liger&gt; myLigerGroup;
+
+    /**
+     * Create a static group of Liger
+     *
+     * @return the number of animals in the group
+     */
+    public static int create() {
+<span class="nc" id="L19">        myLigerGroup = new ArrayList&lt;&gt;();</span>
+        
+<span class="nc" id="L21">        Liger l = new Liger(&quot;Liger1&quot;);</span>
+<span class="nc" id="L22">        myLigerGroup.add(l);</span>
+<span class="nc" id="L23">        myLigerGroup.add(new Liger(&quot;Liger2&quot;));</span>
+<span class="nc" id="L24">        myLigerGroup.add(new Liger(&quot;Liger3&quot;));</span>
+
+<span class="nc" id="L26">        return myLigerGroup.size();</span>
+    }
+
+    /**
+     * Run (simulate) the group doing things
+     */
+    public static void run() {
+<span class="nc" id="L33">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="nc" id="L34">        System.out.println(&quot;Hey i am Liger!&quot;);</span>
+<span class="nc" id="L35">        myLigerGroup.forEach(liger -&gt; {</span>
+<span class="nc" id="L36">            liger.speak();</span>
+<span class="nc" id="L37">            liger.move();</span>
+<span class="nc" id="L38">        });</span>
+<span class="nc" id="L39">        System.out.println(&quot;Liger - cross breed of lion and tiger&quot;);</span>
+<span class="nc" id="L40">        System.out.println(&quot;Crossbreed of lion and tiger&quot;);</span>
+<span class="nc" id="L41">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

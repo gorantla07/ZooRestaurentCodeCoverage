@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Gerenuk.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.animalList</a> &gt; <span class="el_source">Gerenuk.java</span></div><h1>Gerenuk.java</h1><pre class="source lang-java linenums">/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package edu.nwmissouri.animalList;
+
+<span class="nc" id="L8">enum Places{</span>
+<span class="nc" id="L9">    KERALA,</span>
+<span class="nc" id="L10">    DELHI,</span>
+<span class="nc" id="L11">    MANALI,</span>
+<span class="nc" id="L12">    HYDERABAD,</span>
+<span class="nc" id="L13">    CHENNAI,</span>
+   
+}
+/**
+ * Gerenuk class (derived subclass of the superclass Animal)
+ *
+ * @author Tejaswini Challa
+ */
+public class Gerenuk extends Animal {
+   
+    /**
+     * Gerenuk constructor
+     *     
+     * @param name - the name of this Gerenuk
+     */
+   public Gerenuk(String name)
+   {
+<span class="fc" id="L30">      super(name);</span>
+<span class="fc" id="L31">   }</span>
+    @Override
+   public void speak()
+    {
+<span class="fc" id="L35">        System.out.printf(&quot;I'm %s. I'm an Aardvark!&quot;, this.name);</span>
+<span class="fc" id="L36">    }</span>
+   @Override
+   public void move()
+   {
+<span class="fc" id="L40">       System.out.println(&quot;I can move with four legs&quot;);</span>
+<span class="fc" id="L41">   }</span>
+  
+    public void size()
+    {
+<span class="nc" id="L45">        System.out.println(&quot;140 to 160 CENTIMETERS&quot;);</span>
+<span class="nc" id="L46">    }</span>
+    public void place()
+    {
+<span class="nc" id="L49">        System.out.println(&quot;Exists in Kenya&quot;);</span>
+<span class="nc" id="L50">    }</span>
+   public void profess() {
+<span class="nc" id="L52">        double a = 2.5;</span>
+<span class="nc" id="L53">        int b = 2;</span>
+<span class="nc" id="L54">        double c = getGerenukAddition(a, b);</span>
+<span class="nc" id="L55">        System.out.printf(&quot;I know GerenukAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L56">    }</span>
+
+    /**
+     * Custom Gerenuk function - your class must use a unique function name
+     * unique first parameter identifier unique second parameter identifier do
+     * something creative
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getGerenukAddition(double valueOne, int valueTwo) {
+<span class="fc" id="L68">        return valueOne + valueTwo;</span>
+    }
+     public static void main(String[] args) {
+<span class="nc" id="L71">        var a = new Gerenuk(&quot;Tester&quot;);</span>
+<span class="nc" id="L72">        a.speak();</span>
+<span class="nc" id="L73">        a.move();</span>
+<span class="nc" id="L74">        a.profess();</span>
+<span class="nc" id="L75">        System.out.println(&quot;My favourite place is &quot;+Places.HYDERABAD);</span>
+<span class="nc" id="L76">     }</span>
+    
+    }
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

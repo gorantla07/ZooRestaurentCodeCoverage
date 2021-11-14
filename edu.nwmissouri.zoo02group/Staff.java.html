@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Staff.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo02group</a> &gt; <span class="el_source">Staff.java</span></div><h1>Staff.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo02group;
+
+import java.util.ArrayList;
+
+/**
+ * storing the staff data extending person abstract class
+ * @author Manoj Gorantla
+ */
+public class Staff extends Person {
+<span class="fc" id="L14">     private static ArrayList&lt;Staff&gt; StaffList=new ArrayList&lt;&gt;();</span>
+     private int staffId;
+    public Staff(int staffId,String firstName, String lastName, int age, String gender) {
+<span class="fc" id="L17">        super(firstName, lastName, age, gender);</span>
+<span class="fc" id="L18">        this.staffId=staffId;</span>
+<span class="fc" id="L19">    }</span>
+    /**
+     * Added the staff data to create method.
+     */
+     public static void creat(){  
+<span class="fc" id="L24">       StaffList.add(new Staff(1001,&quot;Uday&quot;,&quot;allipi&quot;,26,&quot;Male&quot;));</span>
+<span class="fc" id="L25">       StaffList.add(new Staff(1002,&quot;Rohit&quot;,&quot;Gangguru&quot;,24,&quot;Male&quot;));</span>
+<span class="fc" id="L26">       StaffList.add(new Staff(1003,&quot;Nikhil&quot;,&quot;Nagabandi&quot;,25,&quot;Male&quot;));</span>
+<span class="fc" id="L27">       StaffList.add(new Staff(1004,&quot;Parasana&quot;,&quot;allipi&quot;,22,&quot;Male&quot;));</span>
+<span class="fc" id="L28">   }</span>
+     
+     /**
+      * 
+      * @return the staff list 
+      */
+
+    public static ArrayList&lt;Staff&gt; getStaffList() {
+<span class="fc" id="L36">        return StaffList;</span>
+    }
+    
+
+    public static void setStaffList(ArrayList&lt;Staff&gt; StaffList) {
+<span class="fc" id="L41">        Staff.StaffList = StaffList;</span>
+<span class="fc" id="L42">    }</span>
+    
+    /**
+     * 
+     * @return staff id
+     */
+    public int getStaffId() {
+<span class="fc" id="L49">        return staffId;</span>
+    }
+    
+    /**
+     * 
+     * @param staffId 
+     */
+    public void setStaffId(int staffId) {
+<span class="fc" id="L57">        this.staffId = staffId;</span>
+<span class="fc" id="L58">    }</span>
+     
+    /**
+     * 
+     * @param empid
+     * @return false.
+     */
+    public static boolean check(int empid)
+   {
+       
+<span class="fc" id="L68">       Staff.creat();</span>
+<span class="fc bfc" id="L69" title="All 2 branches covered.">       for(Staff v:Staff.getStaffList())</span>
+       {
+<span class="fc bfc" id="L71" title="All 2 branches covered.">       if(v.getStaffId()==empid)</span>
+       {
+<span class="fc" id="L73">           System.out.println(&quot;Hello &quot;+v.firstName+&quot; Welcome into Maryville Zoo&quot;);</span>
+<span class="fc" id="L74">           return true;</span>
+       }
+<span class="fc" id="L76">       }</span>
+<span class="fc" id="L77">       return false;</span>
+   }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

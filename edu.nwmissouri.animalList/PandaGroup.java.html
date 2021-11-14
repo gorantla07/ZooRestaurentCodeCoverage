@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>PandaGroup.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.animalList</a> &gt; <span class="el_source">PandaGroup.java</span></div><h1>PandaGroup.java</h1><pre class="source lang-java linenums">package edu.nwmissouri.animalList;
+
+import java.util.ArrayList;
+
+/**
+ * Provides methods to create and run a group of Aardvarks
+ *
+ * @author Preethi Jadhav
+ */
+<span class="nc" id="L10">public class PandaGroup {</span>
+
+    private static ArrayList&lt;Panda&gt; myPandaGroup;
+
+    /**
+     * Create a static group of Panda
+     *
+     * @return the number of animals in the group
+     */
+    public static int create() {
+<span class="nc" id="L20">        myPandaGroup = new ArrayList&lt;&gt;();</span>
+        
+<span class="nc" id="L22">        Panda p = new Panda(&quot;Panda1&quot;);</span>
+<span class="nc" id="L23">        myPandaGroup.add(p);</span>
+<span class="nc" id="L24">        myPandaGroup.add(new Panda(&quot;Panda2&quot;));</span>
+<span class="nc" id="L25">        myPandaGroup.add(new Panda(&quot;Panda3&quot;));</span>
+
+<span class="nc" id="L27">        return myPandaGroup.size();</span>
+    }
+
+    /**
+     * Run (simulate) the group doing things
+     */
+    public static void run() {
+<span class="nc" id="L34">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="nc" id="L35">        System.out.println(&quot;Hey - look at the Pandas!&quot;);</span>
+<span class="nc" id="L36">        myPandaGroup.forEach(panda -&gt; {</span>
+<span class="nc" id="L37">            panda.speak();</span>
+<span class="nc" id="L38">            panda.move();</span>
+<span class="nc" id="L39">        });</span>
+<span class="nc" id="L40">        System.out.println(&quot;Nice Pandas - that was fun!&quot;);</span>
+<span class="nc" id="L41">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="nc" id="L42">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

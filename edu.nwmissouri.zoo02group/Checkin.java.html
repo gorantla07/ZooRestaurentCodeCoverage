@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Checkin.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo02group</a> &gt; <span class="el_source">Checkin.java</span></div><h1>Checkin.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo02group;
+
+import edu.nwmissouri.animalList.visitAnimals;
+import java.util.ArrayList;
+import java.util.Scanner;
+/**
+ * choosing type of checking based upon user interest
+ * @author Pavan Kumar Atmakuri
+ */
+public class Checkin {
+<span class="fc" id="L15">    private static  ArrayList&lt;OrderedItem&gt; itemOrders=new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L16">    private static  ArrayList&lt;OrderedDrink&gt; drinkOrders= new ArrayList&lt;&gt;();</span>
+
+   /**
+    * 
+    * @return itemOrdered List
+    */
+    public static ArrayList&lt;OrderedItem&gt; getItemOrders() {
+<span class="fc" id="L23">        return itemOrders;</span>
+    }
+    /**
+     * 
+     * @return drinkOrdered List
+     */
+    public static ArrayList&lt;OrderedDrink&gt; getDrinkOrders() {
+<span class="fc" id="L30">        return drinkOrders;</span>
+    }
+
+    public static void setItemOrders(ArrayList&lt;OrderedItem&gt; itemOrders) {
+<span class="fc" id="L34">        Checkin.itemOrders = itemOrders;</span>
+<span class="fc" id="L35">    }</span>
+
+    public static void setDrinkOrders(ArrayList&lt;OrderedDrink&gt; drinkOrders) {
+<span class="fc" id="L38">        Checkin.drinkOrders = drinkOrders;</span>
+<span class="fc" id="L39">    }</span>
+
+   
+   
+
+   
+<span class="fc" id="L45">    public Checkin() {</span>
+<span class="fc" id="L46">    }</span>
+    /**
+     * 
+     * @param id getting visitor id
+     * @param c getting type of entered
+     */
+    public void chooice(int id,int c) {
+
+<span class="nc" id="L54">        Scanner s = new Scanner(System.in);</span>
+        
+        int ch;
+        do {
+<span class="nc" id="L58">            System.out.println(&quot;what you want to see\n1. visit the animals\n2. Food court\n3. exit&quot;);</span>
+<span class="nc" id="L59">            ch = s.nextInt();</span>
+
+<span class="nc bnc" id="L61" title="All 4 branches missed.">            switch (ch) {</span>
+                case 1 -&gt; {
+<span class="nc" id="L63">                    visitAnimals va=new visitAnimals();</span>
+<span class="nc" id="L64">                    va.selectedAnimal();</span>
+<span class="nc" id="L65">                }</span>
+                case 2 -&gt; {
+
+                    int k;
+                    do {
+<span class="nc" id="L70">                        System.out.println(&quot;what you want's to choose&quot;);</span>
+<span class="nc" id="L71">                        System.out.println(&quot;1. Items\n2. Drinks\n3. Type 3 for back to check in&quot;);</span>
+
+<span class="nc" id="L73">                        k = s.nextInt();</span>
+<span class="nc bnc" id="L74" title="All 3 branches missed.">                        switch (k) {</span>
+                            case 1 -&gt; {
+<span class="nc" id="L76">                                System.out.println(&quot;1. Veg_Biriyani\n2. Chicken_Biriyani\n3. Rotti\n4. prawls_Biriyani\n5. Afghini_chicken&quot;);</span>
+<span class="nc" id="L77">                                System.out.println(&quot;What Item do you want&quot;);</span>
+
+<span class="nc" id="L79">                                int u = s.nextInt();</span>
+<span class="nc bnc" id="L80" title="All 6 branches missed.">                                switch (u) {</span>
+                                    case 1 -&gt; {
+<span class="nc" id="L82">                                        itemOrders.add(new OrderedItem(Items.Veg_Biriyani));</span>
+                                        
+<span class="nc" id="L84">                                    }</span>
+                                    case 2 -&gt; {
+<span class="nc" id="L86">                                        itemOrders.add(new OrderedItem(Items.Chicken_Biriyani));</span>
+<span class="nc" id="L87">                                    }</span>
+                                    case 3 -&gt; {
+<span class="nc" id="L89">                                        itemOrders.add(new OrderedItem(Items.Rotti));</span>
+<span class="nc" id="L90">                                    }</span>
+                                    case 4 -&gt; {
+<span class="nc" id="L92">                                        itemOrders.add(new OrderedItem(Items.prawls_Biriyani));</span>
+<span class="nc" id="L93">                                    }</span>
+                                    case 5 -&gt; {
+<span class="nc" id="L95">                                        itemOrders.add(new OrderedItem(Items.Afghini_chicken));</span>
+                                    }
+                                }
+<span class="nc" id="L98">                            }</span>
+                            case 2 -&gt; {
+<span class="nc" id="L100">                                System.out.println(&quot;1. FOUNTAIN_SODA_20_OZ\n2. RED_BULL\n3. IZZE_SPARKLING_JUICE\n4. FRESH_BREWED_ICED_TEA\n5. WATER&quot;);</span>
+<span class="nc" id="L101">                                System.out.println(&quot;What type of drink do you want &quot;);</span>
+
+<span class="nc" id="L103">                                int y = s.nextInt();</span>
+<span class="nc bnc" id="L104" title="All 6 branches missed.">                                switch (y) {</span>
+                                    case 1 -&gt; {
+<span class="nc" id="L106">                                        drinkOrders.add(new OrderedDrink(Drinks.FOUNTAIN_SODA_20_OZ));</span>
+<span class="nc" id="L107">                                    }</span>
+                                    case 2 -&gt; {
+<span class="nc" id="L109">                                        drinkOrders.add(new OrderedDrink(Drinks.RED_BULL));</span>
+<span class="nc" id="L110">                                    }</span>
+                                    case 3 -&gt; {
+<span class="nc" id="L112">                                        drinkOrders.add(new OrderedDrink(Drinks.IZZE_SPARKLING_JUICE));</span>
+<span class="nc" id="L113">                                    }</span>
+                                    case 4 -&gt; {
+<span class="nc" id="L115">                                        drinkOrders.add(new OrderedDrink(Drinks.FRESH_BREWED_ICED_TEA));</span>
+<span class="nc" id="L116">                                    }</span>
+                                    case 5 -&gt; {
+<span class="nc" id="L118">                                        drinkOrders.add(new OrderedDrink(Drinks.WATER));</span>
+                                    }
+
+                                }
+
+                            }
+                        }
+
+<span class="nc bnc" id="L126" title="All 2 branches missed.">                    } while (k != 3);</span>
+<span class="nc" id="L127">                }</span>
+                case 3 -&gt; {
+<span class="nc" id="L129">                    Billing b = new Billing();</span>
+<span class="nc" id="L130">                    b.findCost();</span>
+<span class="nc" id="L131">                    System.out.println(b.printBill(id,c));</span>
+                   
+                }
+            }
+<span class="nc bnc" id="L135" title="All 2 branches missed.">        } while (ch != 3);</span>
+
+<span class="nc" id="L137">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

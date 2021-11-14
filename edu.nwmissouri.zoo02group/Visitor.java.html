@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Visitor.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.zoo02group</a> &gt; <span class="el_source">Visitor.java</span></div><h1>Visitor.java</h1><pre class="source lang-java linenums">/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package edu.nwmissouri.zoo02group;
+
+import java.util.ArrayList;
+
+/**
+ * storing visitor data and extending the person abstract class
+ * @author Manoj Gorantla
+ */
+public class Visitor extends Person {
+    int visitorId;
+<span class="fc" id="L15">    private static ArrayList&lt;Visitor&gt; visitorList=new ArrayList&lt;&gt;();</span>
+    
+    /**
+     * 
+     * @param vistorId
+     * @param firstName
+     * @param lastName
+     * @param age
+     * @param gender 
+     */
+    public Visitor(int vistorId,String firstName, String lastName, int age, String gender) {
+<span class="fc" id="L26">        super(firstName, lastName, age, gender);</span>
+<span class="fc" id="L27">        this.visitorId=vistorId;</span>
+         
+<span class="fc" id="L29">    }</span>
+
+<span class="fc" id="L31">    public Visitor(){}</span>
+
+    /**
+     * 
+     * @return visitor Id
+     */
+    public int getVisitorId() {
+<span class="fc" id="L38">        return visitorId;</span>
+    }
+    
+    /**
+     * 
+     * @param visitorId 
+     */
+    public void setVisitorId(int visitorId) {
+<span class="fc" id="L46">        this.visitorId = visitorId;</span>
+<span class="fc" id="L47">    }</span>
+    
+    /**
+     * Added the visitors
+     */
+   public static void creat(){  
+<span class="fc" id="L53">       visitorList.add(new Visitor(101,&quot;Shashi&quot;,&quot;pedha&quot;,22,&quot;Male&quot;));</span>
+<span class="fc" id="L54">       visitorList.add(new Visitor(102,&quot;Manoj&quot;,&quot;Gorantla&quot;,26,&quot;Male&quot;));</span>
+<span class="fc" id="L55">       visitorList.add(new Visitor(103,&quot;Pavan&quot;,&quot;Atmakuri&quot;,22,&quot;Male&quot;));</span>
+<span class="fc" id="L56">       visitorList.add(new Visitor(104,&quot;Madhava&quot;,&quot;Nelluri&quot;,22,&quot;Male&quot;));</span>
+<span class="fc" id="L57">   }</span>
+    
+   /**
+    * 
+    * @return visitor list
+    */
+    public static ArrayList&lt;Visitor&gt; getVisitorList() {
+<span class="fc" id="L64">        return visitorList;</span>
+    }
+    /**
+     * 
+     * @param vis 
+     */
+    public void setVisitorList(Visitor vis) {
+<span class="fc" id="L71">        visitorList.add(vis);</span>
+<span class="fc" id="L72">    }</span>
+    
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
