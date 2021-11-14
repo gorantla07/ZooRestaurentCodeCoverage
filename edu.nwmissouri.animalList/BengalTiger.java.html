@@ -6,38 +6,54 @@
 package edu.nwmissouri.animalList;
 
 /**
- *
+ * BengalTiger class (derived subclass of the superclass Animal)
  * @author vamsibhogireddy
  */
 public class BengalTiger extends Animal{
     public BengalTiger(String name) 
    {
-<span class="nc" id="L15">       super(name);</span>
-<span class="nc" id="L16">   }</span>
+<span class="fc" id="L15">       super(name);</span>
+<span class="fc" id="L16">   }</span>
     /*
     *method created to detect sound variation
     */
     @Override
    public void speak()
     {
-<span class="nc" id="L23">        System.out.println(&quot;My name is Tiger.&quot;);</span>
-<span class="nc" id="L24">    }</span>
+<span class="fc" id="L23">        System.out.println(&quot;My name is Tiger.&quot;);</span>
+<span class="fc" id="L24">    }</span>
    /*
     *method created to indicate size
     */
    @Override
     public void move()
     {
-<span class="nc" id="L31">        System.out.println(&quot;I am one of the strongest animal in the world and move with four legs&quot;);</span>
-<span class="nc" id="L32">    }</span>
+<span class="fc" id="L31">        System.out.println(&quot;I am one of the strongest animal in the world and move with four legs&quot;);</span>
+<span class="fc" id="L32">    }</span>
     /*
     *method created to explain in which place it is going to survive
     */
    
     public void place()
     {
-<span class="nc" id="L39">        System.out.println(&quot;My existence is in many locations in the world&quot;);</span>
-<span class="nc" id="L40">    }</span>
+<span class="fc" id="L39">        System.out.println(&quot;My existence is in many locations in the world&quot;);</span>
+<span class="fc" id="L40">    }</span>
+    /**
+     * 
+     * @param a
+     * @param b
+     * @return 
+     * returns integer
+     */
+    public int per(int a,int b){
+<span class="nc" id="L49">        return 2*(a+b);</span>
+    }
+    /**
+     * perimeter of solid
+     */
+    public void perimeter(){
+<span class="nc" id="L55">        System.out.println(&quot;perimeter&quot;+per(1,2));</span>
+<span class="nc" id="L56">    }</span>
 
     
 }

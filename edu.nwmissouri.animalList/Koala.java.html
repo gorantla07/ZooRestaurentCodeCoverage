@@ -9,20 +9,45 @@ package edu.nwmissouri.animalList;
  *
  * @author Vinay Manavarthi
  */
+
+/**
+ * This class defines the nature of the koala
+ * @author Vinay Manavarthi (S545225)
+ */
 public class Koala extends Animal {
 
-    private String name;
+    
+
 
     public Koala(String name) {
-<span class="nc" id="L17">        super(name);</span>
-<span class="nc" id="L18">    }</span>
+<span class="fc" id="L23">        super(name);</span>
+<span class="fc" id="L24">    }</span>
 
     public void speak() {
-<span class="nc" id="L21">        System.out.println(&quot;Koala sound&quot;);</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L27">           System.out.printf(&quot;I'm %s. I'm an Koala!&quot;, this.name);</span>
+<span class="fc" id="L28">    }</span>
 
     public void move() {
-<span class="nc" id="L25">        System.out.println(&quot;Koala movement&quot;);</span>
-<span class="nc" id="L26">    }</span>
+<span class="fc" id="L31">        System.out.println(&quot;Koala movement&quot;);</span>
+<span class="fc" id="L32">    }</span>
+/**
+     * This method will initialize the values and calls the sumOfNumbers method
+     */
+    public void sum() {
+<span class="nc" id="L37">        int num1 = 5;</span>
+<span class="nc" id="L38">        int num2 = 5;</span>
+<span class="nc" id="L39">        int sum = sumOfNumbers(num1, num2);</span>
+<span class="nc" id="L40">        System.out.println(&quot;The Sum of two numbers is: &quot; + sum);</span>
+<span class="nc" id="L41">    }</span>
+
+    public int sumOfNumbers(int a, int b) {
+<span class="nc" id="L44">        return a + b;</span>
+    }
+/**
+ * The application's starting  point
+ * This is the main method which makes use of sum(),speak(),move().
+ * @param args an array of command-line arguments for the application
+ */
+  
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

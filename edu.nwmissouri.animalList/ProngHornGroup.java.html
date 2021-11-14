@@ -16,26 +16,33 @@ import java.util.ArrayList;
      * @return the number of animals in the group
      */
     public static int create() {
-<span class="nc" id="L19">        myGroup = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L19">        myGroup = new ArrayList&lt;&gt;();</span>
 
-<span class="nc" id="L21">        myGroup.add(new ProngHorn(&quot;Alekhya&quot;));</span>
-<span class="nc" id="L22">        myGroup.add(new ProngHorn(&quot;Rachu&quot;));</span>
-<span class="nc" id="L23">        myGroup.add(new ProngHorn(&quot;Gandra&quot;));</span>
+<span class="fc" id="L21">        myGroup.add(new ProngHorn(&quot;Alekhya&quot;));</span>
+<span class="fc" id="L22">        myGroup.add(new ProngHorn(&quot;Rachu&quot;));</span>
+<span class="fc" id="L23">        myGroup.add(new ProngHorn(&quot;Gandra&quot;));</span>
 
-<span class="nc" id="L25">        return myGroup.size();</span>
+<span class="fc" id="L25">        return myGroup.size();</span>
     }
+    /** 
+     * function run prints the statements
+     */
 
     public static void run() {
-<span class="nc" id="L29">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
-<span class="nc" id="L30">        System.out.println(&quot;Hey - look at the pronghorn!&quot;);</span>
-<span class="nc bnc" id="L31" title="All 2 branches missed.">        for (ProngHorn pronghorn : myGroup) {</span>
-<span class="nc" id="L32">            pronghorn.speak();</span>
-<span class="nc" id="L33">            pronghorn.move();</span>
-<span class="nc" id="L34">        }</span>
+<span class="fc" id="L32">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="fc" id="L33">        System.out.println(&quot;Hey - look at the pronghorn!&quot;);</span>
+<span class="fc bfc" id="L34" title="All 2 branches covered.">        for (ProngHorn pronghorn : myGroup) {</span>
+<span class="fc" id="L35">            pronghorn.speak();</span>
+<span class="fc" id="L36">            pronghorn.move();</span>
+<span class="fc" id="L37">            pronghorn.mul(3,2);</span>
+<span class="fc" id="L38">            pronghorn.sub(3,2);</span>
+<span class="fc" id="L39">            pronghorn.profess1();</span>
 
-<span class="nc" id="L36">        System.out.println(&quot;Nice pronghorn - that was fun!&quot;);</span>
-<span class="nc" id="L37">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
-<span class="nc" id="L38">    }</span>
+<span class="fc" id="L41">        }</span>
+
+<span class="fc" id="L43">        System.out.println(&quot;Nice pronghorn - that was fun!&quot;);</span>
+<span class="fc" id="L44">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="fc" id="L45">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

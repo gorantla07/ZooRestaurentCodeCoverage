@@ -21,22 +21,15 @@ public class Panthera extends Animal {
     public Panthera(String name) {
 <span class="fc" id="L22">        super(name);</span>
 <span class="fc" id="L23">    }</span>
-    /**
-     * Usage of enums
-     */
-<span class="nc" id="L27">    public enum Gender{</span>
-<span class="nc" id="L28">        Male,</span>
-<span class="nc" id="L29">        Female,</span>
-<span class="nc" id="L30">        Unknown</span>
-    }
+  
     /**
      * This is speak method which is used to to print the message print the
      * statement
      */
     @Override
     public void speak() {
-<span class="fc" id="L38">        System.out.println(&quot;I am Panthera&quot;);</span>
-<span class="fc" id="L39">    }</span>
+<span class="fc" id="L31">        System.out.println(&quot;I am Panthera&quot;);</span>
+<span class="fc" id="L32">    }</span>
 
     /**
      * This is move method which is used to to print the message print the
@@ -44,41 +37,43 @@ public class Panthera extends Animal {
      */
     @Override
     public void move() {
-<span class="fc" id="L47">        System.out.println(&quot;I can eat and walk&quot;);</span>
-<span class="fc" id="L48">    }</span>
+<span class="fc" id="L40">        System.out.println(&quot;I can eat and walk&quot;);</span>
+<span class="fc" id="L41">    }</span>
     /**
     * This method prints the logarithm value of a number
-    *prints the logaithm value 
+    *prints the logarithm value 
     */
     public void logarithm(){
-<span class="nc" id="L54">        double x=Math.log(5);</span>
-<span class="nc" id="L55">        System.out.println(&quot;Logarithm value of two numbers is:&quot;+x);</span>
-<span class="nc" id="L56">    }</span>
+<span class="nc" id="L47">        double x=Math.log(5);</span>
+<span class="nc" id="L48">        System.out.println(&quot;Logarithm value of two numbers is:&quot;+x);</span>
+<span class="nc" id="L49">    }</span>
     /**
     * This method prints the multiplication of two numbers 
     *prints the Multiplication value 
+    * @param a
+    * @param b
     */
     public void multiplication(int a, int b){
-<span class="nc" id="L62">        int c=a*b;</span>
-<span class="nc" id="L63">        System.out.println(&quot;The multiplication of two numbers is: &quot; +c);</span>
-<span class="nc" id="L64">    }</span>
+<span class="nc" id="L57">        int c=a*b;</span>
+<span class="nc" id="L58">        System.out.println(&quot;The multiplication of two numbers is: &quot; +c);</span>
+<span class="nc" id="L59">    }</span>
     /**
     * adds the two numbers 
     * @return double value
     */
     public double getPantheraAddition(double valueOne, int valueTwo) {
-<span class="fc" id="L70">        return valueOne + valueTwo;</span>
+<span class="fc" id="L65">        return valueOne + valueTwo;</span>
     }
+    /**
+     * profess calls the two numbers
+     * calls the function getPantheraAddition
+     */
+        public void profess1() {
+<span class="fc" id="L72">        double a = 2.5;</span>
+<span class="fc" id="L73">        int b = 2;</span>
+<span class="fc" id="L74">        double c = getPantheraAddition(a, b);</span>
+<span class="fc" id="L75">        System.out.printf(&quot;I know PantheraAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="fc" id="L76">            }</span>
 
-  public static void main(String args[]){
-<span class="nc" id="L74">      var d=new Panthera(&quot;Harshika&quot;);</span>
-<span class="nc" id="L75">      d.speak();</span>
-<span class="nc" id="L76">      d.move();</span>
-<span class="nc" id="L77">      d.multiplication(3, 5);</span>
-<span class="nc" id="L78">      d.logarithm();</span>
-<span class="nc" id="L79">     Gender c1 = Gender.Male;</span>
-<span class="nc" id="L80">     System.out.println(&quot;The Gender of the Panthera is: &quot;+c1);</span>
-     
-<span class="nc" id="L82">  }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

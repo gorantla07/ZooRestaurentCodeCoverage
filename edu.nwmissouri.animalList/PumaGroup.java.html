@@ -3,8 +3,8 @@
 import java.util.ArrayList;
 
 /**
- *
- * @author Sai Kaushik Beeram
+ *This class defines PumaGroup
+ * @author Sai Kaushik Beeram (S545124)
  */
 <span class="nc" id="L9">public class PumaGroup {</span>
     private static ArrayList&lt;Puma&gt; myGroup;
@@ -15,29 +15,29 @@ import java.util.ArrayList;
      * @return the number of animals in the group
      */
     public static int create() {
-<span class="nc" id="L18">        myGroup = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L18">        myGroup = new ArrayList&lt;&gt;();</span>
         
-<span class="nc" id="L20">        Puma p = new Puma(&quot;Abbie&quot;);</span>
-<span class="nc" id="L21">        myGroup.add(p);</span>
-<span class="nc" id="L22">        myGroup.add(new Puma(&quot;Boss&quot;));</span>
-<span class="nc" id="L23">        myGroup.add(new Puma(&quot;Cass&quot;));</span>
+<span class="fc" id="L20">        Puma p = new Puma(&quot;Abbie&quot;);</span>
+<span class="fc" id="L21">        myGroup.add(p);</span>
+<span class="fc" id="L22">        myGroup.add(new Puma(&quot;Boss&quot;));</span>
+<span class="fc" id="L23">        myGroup.add(new Puma(&quot;Cass&quot;));</span>
 
-<span class="nc" id="L25">        return myGroup.size();</span>
+<span class="fc" id="L25">        return myGroup.size();</span>
     }
 
     /**
      * Run (simulate) the group doing things
      */
     public static void run() {
-<span class="nc" id="L32">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
-<span class="nc" id="L33">        System.out.println(&quot;Hey - look at the Pumas!&quot;);</span>
-<span class="nc" id="L34">        myGroup.forEach(Puma -&gt; {</span>
-<span class="nc" id="L35">            Puma.speak();</span>
-<span class="nc" id="L36">            Puma.move();</span>
-<span class="nc" id="L37">        });</span>
-<span class="nc" id="L38">        System.out.println(&quot;Nice Pumas - that was fun!&quot;);</span>
-<span class="nc" id="L39">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
-<span class="nc" id="L40">    }</span>
+<span class="fc" id="L32">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="fc" id="L33">        System.out.println(&quot;Hey - look at the Pumas!&quot;);</span>
+<span class="fc" id="L34">        myGroup.forEach(Puma -&gt; {</span>
+<span class="fc" id="L35">            Puma.speak();</span>
+<span class="fc" id="L36">            Puma.move();</span>
+<span class="fc" id="L37">        });</span>
+<span class="fc" id="L38">        System.out.println(&quot;Nice Pumas - that was fun!&quot;);</span>
+<span class="fc" id="L39">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="fc" id="L40">    }</span>
 
 
 }

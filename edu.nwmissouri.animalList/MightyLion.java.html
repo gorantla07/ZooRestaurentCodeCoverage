@@ -6,24 +6,61 @@
 package edu.nwmissouri.animalList;
 
 /**
- *
- * @author S545712
+ * This is the MightyLion class This class have move and speak method of Lion
+ * @author Vijay Kumar Chunchu(S545712)
  */
 public class MightyLion extends Animal {
      public MightyLion(String name){
-<span class="nc" id="L14">        super(name);</span>
-<span class="nc" id="L15">    }</span>
+<span class="fc" id="L14">        super(name);</span>
+<span class="fc" id="L15">    }</span>
 
     @Override
     public void move() {
-<span class="nc" id="L19">        System.out.println(&quot;I will Walk and run&quot;);</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L19">        System.out.println(&quot;I will Walk and run&quot;);</span>
+<span class="fc" id="L20">    }</span>
 
     @Override
     public void speak() {
-<span class="nc" id="L24">         System.out.printf(&quot;I am %s Lion. I will roar.\n&quot;, this.name);</span>
-<span class="nc" id="L25">    }</span>
-    
+<span class="fc" id="L24">         System.out.printf(&quot;I am %s Lion. I will roar.\n&quot;, this.name);</span>
+<span class="fc" id="L25">    }</span>
+     
+     /*
+      * creating enum method
+      */
+<span class="nc" id="L30">     public enum Months {</span>
+<span class="nc" id="L31">        JANUARY,</span>
+<span class="nc" id="L32">        FEBRUARY,</span>
+<span class="nc" id="L33">        MARCH,</span>
+<span class="nc" id="L34">        APRIL,</span>
+<span class="nc" id="L35">        MAY,</span>
+<span class="nc" id="L36">        JUNE,</span>
+<span class="nc" id="L37">        JULY,</span>
+<span class="nc" id="L38">        AUGUST,</span>
+<span class="nc" id="L39">        SEPTEMBER,</span>
+<span class="nc" id="L40">        OCTOBER,</span>
+<span class="nc" id="L41">        NOVEMBER,</span>
+<span class="nc" id="L42">        DECEMBER;</span>
+    }
+     
+     /*
+     this is method of MightyLion Addition
+     */
+     
+       public double getMightyLionAddition(double valueOne, int valueTwo) {
+<span class="fc" id="L50">        return valueOne + valueTwo;</span>
+    }
+     
+      public void profess() {
+<span class="nc" id="L54">        double a = 2.5;</span>
+<span class="nc" id="L55">        int b = 2;</span>
+<span class="nc" id="L56">        double c = getMightyLionAddition(a, b);</span>
+<span class="nc" id="L57">        System.out.printf(&quot;The MightyLionAddition is  %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L58">    }</span>
+
+  
+   
+
+ 
    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -6,36 +6,78 @@
 package edu.nwmissouri.animalList;
 
 /**
- *
- * @author Saitej Veerabathini
+ * FerociousTiger class extends from parent class Animal
+ * 
+ * @author Saitej Veerabathini 
  */
 public class FerociousTiger extends Animal{
+    
+    /**
+     * Enumerator class for Color of FerociousTiger
+     */
+<span class="nc" id="L18">    enum Color {</span>
+<span class="nc" id="L19">        White,</span>
+<span class="nc" id="L20">        Gold,</span>
+<span class="nc" id="L21">        Black</span>
+    }
     
     /***
      * Constructor for FerociousTiger
      * @param name - the name of this FerociousTiger
      */
     public FerociousTiger(String name){
-<span class="nc" id="L19">        super(name);</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L29">        super(name);</span>
+<span class="fc" id="L30">    }</span>
     
     /***
      * Override method for FerociousTiger Speak
      */
     @Override
     public void speak() {
-<span class="nc" id="L27">        System.out.printf(&quot;I'm %s.I'm a Ferocious Tiger\n&quot;, this.name);</span>
-<span class="nc" id="L28">    }</span>
+<span class="fc" id="L37">        System.out.printf(&quot;I'm %s.I'm a Ferocious Tiger\n&quot;, this.name);</span>
+<span class="fc" id="L38">    }</span>
     
     /***
      * Override method for FerociousTiger Move
      */
     @Override
     public void move() {
-<span class="nc" id="L35">        System.out.println(&quot;I move on 4 legs&quot;);</span>
-<span class="nc" id="L36">    }</span>
+<span class="fc" id="L45">        System.out.println(&quot;I move on 4 legs&quot;);</span>
+<span class="fc" id="L46">    }</span>
     
+    /**
+     * Type method of FerociousTiger
+     */
+     public void type() {
+<span class="fc" id="L52">        System.out.println(&quot;I'm a Carnivore animal&quot;);</span>
+<span class="fc" id="L53">    }</span>
+     
+     /**
+      * Lifespan method of FerociousTiger
+      */
+     public void lifespan(){
+<span class="fc" id="L59">         System.out.println(&quot;I live upto 8-10 years&quot;);</span>
+<span class="fc" id="L60">     }</span>
+    
+     /**
+      * Family method of FerociousTiger
+      */
+     public void family(){
+<span class="fc" id="L66">         System.out.println(&quot;I belong to Felidae famly&quot;);</span>
+<span class="fc" id="L67">     }</span>
+     
+     public int getTotalSleep(int a, int b){
+<span class="fc" id="L70">         return a+b;</span>
+     }
+     
+     public void sleep(){
+<span class="nc" id="L74">         int morningSleep_hr = 2;</span>
+<span class="nc" id="L75">         int eveningSleep_hr = 10;</span>
+<span class="nc" id="L76">         int totalSleep_hr = getTotalSleep(morningSleep_hr,eveningSleep_hr);</span>
+<span class="nc" id="L77">         System.out.println(&quot;I am &quot;+this.name+&quot;, I am a Ferocious Tiger. I sleep &quot;+totalSleep_hr+&quot; hours per day&quot;);</span>
+<span class="nc" id="L78">     }</span>
    
+     
 
     
 }

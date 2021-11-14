@@ -150,55 +150,5 @@ public class Griffin extends Animal {
 <span class="pc bpc" id="L150" title="1 of 2 branches missed.">        return (isEven) ? NumberParity.EVEN : NumberParity.ODD;</span>
     }
 
-    public static void main(String[] args) {
-        // Define testing instance of the class
-<span class="nc" id="L155">        var g = new Griffin(&quot;Tester&quot;);</span>
-
-        // Begin testing functions &amp; print out result of each
-<span class="nc" id="L158">        String myName = g.getName();</span>
-<span class="nc" id="L159">        System.out.println(&quot;Hello, my name is : &quot; + myName + &quot;!&quot;);</span>
-
-<span class="nc" id="L161">        g.speak();</span>
-<span class="nc" id="L162">        g.move();</span>
-
-<span class="nc" id="L164">        String mySpecies = g.getSpeciesName();</span>
-<span class="nc" id="L165">        System.out.println(&quot;\nMy species is called &quot; + mySpecies);</span>
-
-<span class="nc" id="L167">        String myLatin = g.getLatinName();</span>
-<span class="nc" id="L168">        System.out.println(&quot;Sometimes I'm referred to as the species: &quot; + myLatin);</span>
-
-<span class="nc" id="L170">        String myLocation = g.getLocationFound();</span>
-<span class="nc" id="L171">        System.out.println(&quot;My preferred habit is: &quot; + myLocation);</span>
-
-<span class="nc" id="L173">        int mySleep = g.getSleepDuration();</span>
-<span class="nc" id="L174">        System.out.println(&quot;When I get tired I like to sleep for &quot; + mySleep + &quot; hours&quot;);</span>
-
-<span class="nc" id="L176">        int myMovespeed = g.getMovementSpeed();</span>
-<span class="nc" id="L177">        System.out.println(&quot;When I'm really speeding along I max out at &quot;</span>
-                + myMovespeed + &quot; mph&quot;);
-
-<span class="nc bnc" id="L180" title="All 2 branches missed.">        String isFound = (g.getIsExtinct()) ? &quot;yes&quot; : &quot;no&quot;;</span>
-<span class="nc" id="L181">        System.out.println(&quot;Can you find me out in the wild? The answer is &quot;</span>
-                + isFound);
-
-        int firstNumber, secondNumber;
-<span class="nc" id="L185">        Scanner scan = new Scanner(System.in);</span>
-        // Prompt the user to input data for our calculation method
-<span class="nc" id="L187">        System.out.println(&quot;\nDid you know Griffin's are really good at math too?&quot;);</span>
-<span class="nc" id="L188">        System.out.println(&quot; - Give the griffin a number&quot;);</span>
-<span class="nc" id="L189">        firstNumber = scan.nextInt();</span>
-<span class="nc" id="L190">        System.out.println(&quot; - Give the griffin a second number&quot;);</span>
-<span class="nc" id="L191">        secondNumber = scan.nextInt();</span>
-
-        // Check our enum result and print out a response based on it
-<span class="nc" id="L194">        NumberParity result = calculateSumParity(firstNumber, secondNumber);</span>
-<span class="nc bnc" id="L195" title="All 2 branches missed.">        if (result == NumberParity.EVEN) {</span>
-<span class="nc" id="L196">            System.out.println(myName + &quot; says that the sum of your numbers is EVEN!&quot;);</span>
-<span class="nc bnc" id="L197" title="All 2 branches missed.">        } else if (result == NumberParity.ODD) {</span>
-<span class="nc" id="L198">            System.out.println(myName + &quot; says that the sum of your numbers is ODD&quot;);</span>
-        } else {
-<span class="nc" id="L200">            System.out.println(myName + &quot; is a little confused, maybe he's feeling sick&quot;);</span>
-        }
-<span class="nc" id="L202">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

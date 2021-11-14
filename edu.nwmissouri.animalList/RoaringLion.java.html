@@ -6,31 +6,54 @@
 package edu.nwmissouri.animalList;
 
 /**
+ * This class is a custom Lion class, which is defining the lion behavior
  *
  * @author Anil Kumar Kolla(S545232@nwmissouri.edu)
  */
-public class RoaringLion extends Animal{
+public class RoaringLion extends Animal {
+
 
     /**
      * this constructor passing the animal name to parent class
+     *
      * @param name
      */
     public RoaringLion(String name) {
-<span class="nc" id="L19">        super(name);</span>
-<span class="nc" id="L20">    }</span>
- 
+<span class="fc" id="L22">        super(name);</span>
+<span class="fc" id="L23">    }</span>
+
     /**
      * this function prints the animal sound
      */
     public void speak() {
-<span class="nc" id="L26">        System.out.println(&quot;I am a &quot; + this.name + &quot;, I love to Roar.&quot;);</span>
-<span class="nc" id="L27">    }</span>
-    
+<span class="fc" id="L29">        System.out.println(&quot;I am a &quot; + this.name + &quot;, I love to Roar.&quot;);</span>
+<span class="fc" id="L30">    }</span>
+
     /**
      * this function prints the animal movement
      */
     public void move() {
-<span class="nc" id="L33">        System.out.println(&quot;I run for Haunting&quot;);</span>
-<span class="nc" id="L34">    }</span>
+<span class="fc" id="L36">        System.out.println(&quot;I run for Haunting&quot;);</span>
+<span class="fc" id="L37">    }</span>
+
+ 
+
+    /**
+     * this function is to declare the local variables for to call an actual
+     * addition function
+     */
+    public void lionAddtion() {
+<span class="nc" id="L46">        double a = 5.5;</span>
+<span class="nc" id="L47">        int b = 7;</span>
+<span class="nc" id="L48">        double c = getLionAddition(a, b);</span>
+<span class="nc" id="L49">        System.out.printf(&quot;I know LionAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L50">    }</span>
+
+    /**
+     * this function returns the sum the two input parameters
+     */
+    public double getLionAddition(double input1, int input2) {
+<span class="fc" id="L56">        return input1 + input2;</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

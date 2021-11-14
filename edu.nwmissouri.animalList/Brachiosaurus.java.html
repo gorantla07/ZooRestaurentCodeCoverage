@@ -10,35 +10,47 @@ package edu.nwmissouri.animalList;
  * @author Jayanth Naramsetty
  */
 public class Brachiosaurus extends Animal{
+  
     
     /**
      *Brachiosaurus declaration
      * @param name
      */
     public Brachiosaurus(String name){
-<span class="nc" id="L19">        super(name);</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L20">        super(name);</span>
+<span class="fc" id="L21">    }</span>
 
     /**
      *speak() method
      */
     public void speak(){
-<span class="nc" id="L26">            System.out.println(&quot;I can Roar,Grunts,Hisses,Squeaks&quot;);</span>
-        
-<span class="nc" id="L28">        }</span>
+<span class="fc" id="L27">            System.out.println(&quot;I can Roar,Grunts,Hisses,Squeaks&quot;);</span>
+<span class="fc" id="L28">        }</span>
 
     /**
      *move() method
      */
     public void move(){
-<span class="nc" id="L34">            System.out.println(&quot;i walk all around the land &quot;);</span>
-<span class="nc" id="L35">        }</span>
-        
+<span class="fc" id="L34">            System.out.println(&quot;i walk all around the land &quot;);</span>
+<span class="fc" id="L35">        }</span>
+    
+     public void profes(){
+<span class="nc" id="L38">     double a = 2.5;</span>
+<span class="nc" id="L39">     int b = 2;</span>
+<span class="nc" id="L40">     double c = getBrachiosaurusAddition(a,b);</span>
+<span class="nc" id="L41">     System.out.printf(&quot;I know Brachiosaurus addition! %4.2f plus %d is %4.2f \n&quot;,a,b,c);</span>
+<span class="nc" id="L42">    }</span>
     /**
      *facts() methods
      */
     public void facts(){
-<span class="nc" id="L41">            System.out.println(&quot;WE are group of reptiles that have lived on Earth\nfor about 245 million years. &quot;);</span>
-<span class="nc" id="L42">        }</span>
+<span class="nc" id="L47">            System.out.println(&quot;WE are group of reptiles that have lived on Earth\nfor about 245 million years. &quot;);</span>
+<span class="nc" id="L48">        }</span>
+
+    double getBrachiosaurusAddition(double first, int second) {
+<span class="fc" id="L51">        return first+second; //To change body of generated methods, choose Tools | Templates.</span>
+    }
+    
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

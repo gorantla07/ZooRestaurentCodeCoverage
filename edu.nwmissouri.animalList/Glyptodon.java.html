@@ -6,35 +6,48 @@
 package edu.nwmissouri.animalList;
 
 /**
- *
- * @author Manish Gouud Bandharapu
+ * Glyptodon Class derived from animal class
+ * 
+ * @author Manish Goud Bandharapu 
  */
 public class Glyptodon extends Animal{
+   
     
-    /**
+     /**
+     * 
      * Animal addition
      * @param name
      */
     public Glyptodon(String name){
-<span class="nc" id="L19">        super(name);</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L22">        super(name);</span>
+<span class="fc" id="L23">    }</span>
     
     /**
      * Animal speak
      */
     @Override
     public void speak() {
-<span class="nc" id="L27">        System.out.printf(&quot;I'm %s. I'm a Lion!&quot;,this.name);</span>
-<span class="nc" id="L28">    }</span>
+<span class="fc" id="L30">        System.out.printf(&quot;I'm Manish. I'm an Glyptodon!&quot;,this.name);</span>
+<span class="fc" id="L31">    }</span>
     
     /**
      * Animal move
      */
     @Override()
     public void move() {
-<span class="nc" id="L35">        System.out.println(&quot;when I move, I run, I roar.\n&quot;);</span>
+<span class="fc" id="L38">        System.out.println(&quot;move move move \n&quot;);</span>
         
-<span class="nc" id="L37">    }</span>
+<span class="fc" id="L40">    }</span>
+    public void profes(){
+<span class="nc" id="L42">        double a = 2.5;</span>
+<span class="nc" id="L43">        int b = 2;</span>
+<span class="nc" id="L44">        double c = getGlyptodonAddition(a,b);</span>
+<span class="nc" id="L45">        System.out.printf(&quot;I know Glyptodon addition! %4.2f plus %d is %4.2f \n&quot;,a,b,c);</span>
+<span class="nc" id="L46">    }</span>
+    
+    double getGlyptodonAddition(double first, int second) {
+<span class="fc" id="L49">        return first+second; //To change body of generated methods, choose Tools | Templates.</span>
+    }
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

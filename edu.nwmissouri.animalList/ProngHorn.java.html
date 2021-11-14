@@ -18,8 +18,16 @@ public class ProngHorn extends Animal {
      */
 
     public ProngHorn(String name) {
-<span class="nc" id="L21">        super(name);</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L21">        super(name);</span>
+<span class="fc" id="L22">    }</span>
+    
+    /* Enum genertaion 
+     * 
+    
+    */
+    
+    
+   
 
     /**
      * This is speak method which is used to to print the message print the
@@ -28,8 +36,9 @@ public class ProngHorn extends Animal {
 
     @Override
     public void speak() {
-<span class="nc" id="L31">        System.out.println(&quot;I am Pronghorn&quot;);</span>
-<span class="nc" id="L32">    }</span>
+    
+<span class="fc" id="L40">        System.out.printf(&quot;I'm %s. I'm a ProngHorn!&quot;, this.name);</span>
+<span class="fc" id="L41">    }</span>
 
     /**
      * This is move method which is used to to print the message print the
@@ -37,24 +46,57 @@ public class ProngHorn extends Animal {
      */
     @Override
     public void move() {
-<span class="nc" id="L40">        System.out.println(&quot;I can walk&quot;);</span>
-<span class="nc" id="L41">    }</span>
-
-    public void add(int a, int b) {
-<span class="nc" id="L44">        System.out.println(a + b);</span>
-<span class="nc" id="L45">    }</span>
-    public void sub(int a ,int b) {
+     
+<span class="fc" id="L50">          System.out.println(&quot;When I move, I walk, walk, walk.&quot;);</span>
+<span class="fc" id="L51">    }</span>
     
-<span class="nc" id="L48">         System.out.println(a - b);</span>
-<span class="nc" id="L49">    }</span>
+    /** function mul gives multiplication 
+     * 
+     * @param a
+     * @param b 
+     */
+    public void mul(int a ,int b)
+    {
+<span class="fc" id="L60">        System.out.println(a * b);</span>
+<span class="fc" id="L61">    }</span>
+    
+    /** function sub gives subtarction
+     * 
+     * @param a
+     * @param b 
+     */
+    
+    public void sub(int a ,int b)
+    {
+<span class="fc" id="L71">        System.out.println(a-b);</span>
+<span class="fc" id="L72">    }</span>
+    
+   
+    
 
-    public static void main(String args[]) {
-<span class="nc" id="L52">        ProngHorn p = new ProngHorn(&quot;Alekhya&quot;);</span>
-<span class="nc" id="L53">        p.speak();</span>
-<span class="nc" id="L54">        p.move();</span>
-<span class="nc" id="L55">        p.add(2,3);</span>
-<span class="nc" id="L56">        p.sub(3,2);</span>
-
-<span class="nc" id="L58">    }</span>
+     /**
+     * Custom ProngHorn function - your class must use a unique function name
+     * unique first parameter identifier unique second parameter identifier do
+     * something creative
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getProngHornAddition(double valueOne, int  valueTwo) {
+<span class="fc" id="L87">        return valueOne + valueTwo;</span>
+    }
+    /**
+     * function profess1 calls the getProngHornAddition method
+     
+     */
+     public void profess1() {
+<span class="fc" id="L94">        double a = 2.5;</span>
+<span class="fc" id="L95">        int b = 2;</span>
+<span class="fc" id="L96">        double c = getProngHornAddition(a, b);</span>
+<span class="fc" id="L97">        System.out.printf(&quot;I know ProngHornAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="fc" id="L98">    } </span>
+    
+ 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

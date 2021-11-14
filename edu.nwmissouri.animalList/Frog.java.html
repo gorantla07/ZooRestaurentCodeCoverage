@@ -11,24 +11,10 @@ package edu.nwmissouri.animalList;;
  */
 public class Frog extends Animal {
 
-    /**
-     *
-     * @param name
-     * name parameter
-     */
-<span class="nc" id="L19">    enum RACE</span>
-            {
-<span class="nc" id="L21">        FIRST,</span>
-<span class="nc" id="L22">        SECOUND,</span>
-<span class="nc" id="L23">        THIRD</span>
-        
-        
-        
-        
-    }
+    
     public Frog(String name) {
-<span class="nc" id="L30">        super(name);</span>
-<span class="nc" id="L31">    }</span>
+<span class="nc" id="L16">        super(name);</span>
+<span class="nc" id="L17">    }</span>
 
     /**
      *
@@ -37,8 +23,8 @@ public class Frog extends Animal {
     @Override
     public void speak()
     {
-<span class="nc" id="L40">       System.out.println(&quot;Iam Frog,Iam Frog,Iam Frog&quot;);</span>
-<span class="nc" id="L41">    }</span>
+<span class="nc" id="L26">       System.out.println(&quot;Iam Frog,Iam Frog,Iam Frog&quot;);</span>
+<span class="nc" id="L27">    }</span>
 
     /**
      * overrides move method
@@ -46,65 +32,57 @@ public class Frog extends Animal {
     @Override
     public void move()
     {
-<span class="nc" id="L49">       System.out.println(&quot;When i move,I jump,I jump&quot;);</span>
-<span class="nc" id="L50">    }</span>
+<span class="nc" id="L35">       System.out.println(&quot;When i move,I jump,I jump&quot;);</span>
+<span class="nc" id="L36">    }</span>
     
     /**
      * living method
      */
     public void habitate() {
-<span class="nc" id="L56">        System.out.println(&quot;It lives both on land and water&quot;);</span>
-<span class="nc" id="L57">    }</span>
+<span class="nc" id="L42">        System.out.println(&quot;It lives both on land and water&quot;);</span>
+<span class="nc" id="L43">    }</span>
 
     /**
      * type of animal
      */
     public void type() {
-<span class="nc" id="L63">        System.out.println(&quot;Its a amphibian&quot;);</span>
-<span class="nc" id="L64">    }</span>
+<span class="nc" id="L49">        System.out.println(&quot;Its a amphibian&quot;);</span>
+<span class="nc" id="L50">    }</span>
    
     /**
      * feeding method
      */
     public void feeding()
     {
-<span class="nc" id="L71">       System.out.println(&quot;Feeds on algae and insects&quot;);</span>
-<span class="nc" id="L72">    }</span>
+<span class="nc" id="L57">       System.out.println(&quot;Feeds on algae and insects&quot;);</span>
+<span class="nc" id="L58">    }</span>
 
     /**
      * live span method
      */
     public void livespan()
     {
-<span class="nc" id="L79">        System.out.println(&quot;lives upto 10-12 years&quot;);</span>
-<span class="nc" id="L80">    }</span>
+<span class="nc" id="L65">        System.out.println(&quot;lives upto 10-12 years&quot;);</span>
+<span class="nc" id="L66">    }</span>
+    /**
+     * 
+     * @param DOB
+     * DOB parameter
+     * @param cuy
+     * current age parameter
+     * @return 
+     */
     public int age(int DOB,int cuy)
     {
-<span class="nc" id="L83">        return cuy-DOB;</span>
+<span class="nc" id="L77">        return cuy-DOB;</span>
     }
+    /**
+     * returns agec method
+     */
     public void agec(){
-<span class="nc" id="L86">        System.out.println(&quot;Frog age: &quot;+age(1999,2021));</span>
-<span class="nc" id="L87">    }</span>
-    public static void main(String[] args){
-<span class="nc" id="L89">        Frog f=new Frog(&quot;cold&quot;);</span>
-<span class="nc" id="L90">        f.age(1999, 2021);</span>
-<span class="nc" id="L91">        f.agec();</span>
-<span class="nc" id="L92">        f.move();</span>
-<span class="nc" id="L93">        f.habitate();</span>
-<span class="nc" id="L94">        f.move();</span>
-<span class="nc" id="L95">        f.feeding();</span>
-<span class="nc" id="L96">        RACE R1=RACE.FIRST;</span>
-<span class="nc" id="L97">        RACE R2=RACE.SECOUND;</span>
-<span class="nc" id="L98">        RACE R3=RACE.THIRD;</span>
-<span class="nc" id="L99">        System.out.println(&quot;enums:&quot;+R1+&quot;\n&quot;+R2+&quot;\n&quot;+R3);</span>
-        
-
-
-        
-       
-           
-       
-<span class="nc" id="L107">    }</span>
+<span class="nc" id="L83">        System.out.println(&quot;Frog age: &quot;+age(1999,2021));</span>
+<span class="nc" id="L84">    }</span>
+   
     
 }
 

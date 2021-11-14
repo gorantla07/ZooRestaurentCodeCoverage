@@ -10,24 +10,55 @@ package edu.nwmissouri.animalList;
  * @author Manoj Gorantla
  */
 public class Kangaroo extends Animal {
+    
+<span class="fc" id="L14">    public enum Calender</span>
+    {
+<span class="fc" id="L16">    July,</span>
+<span class="fc" id="L17">    August,</span>
+<span class="fc" id="L18">    September;</span>
+    }
 
     /**
      *
      * @param name is passing and referring it to super class.
      */
     public Kangaroo(String name) {
-<span class="nc" id="L19">        super(name);</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L26">        super(name);</span>
+<span class="fc" id="L27">    }</span>
 
     @Override
     public void speak() {
-<span class="nc" id="L24">        System.out.printf(&quot;I'm %s. I'm an Kangaroo!\n&quot;, this.name);</span>
-<span class="nc" id="L25">    }</span>
+<span class="fc" id="L31">        System.out.printf(&quot;I'm %s. I'm an Kangaroo!\n&quot;, this.name);</span>
+<span class="fc" id="L32">    }</span>
 
     @Override
     public void move() {
-<span class="nc" id="L29">        System.out.println(&quot;In General I can jump but can't run unlike another animals&quot;);</span>
-<span class="nc" id="L30">    }</span>
+<span class="fc" id="L36">        System.out.println(&quot;In General I can jump but can't run unlike another animals&quot;);</span>
+<span class="fc" id="L37">    }</span>
+    
+    public void speed()
+    {
+<span class="fc" id="L41">        System.out.println(&quot;My Maximum speed is 45 MPH&quot;);</span>
+<span class="fc" id="L42">    }</span>
+    
+    public void region()
+    {
+<span class="fc" id="L46">        System.out.println(&quot;I am from Australia&quot;);</span>
+<span class="fc" id="L47">    }</span>
+    
+    public void calc()
+    {
+<span class="fc" id="L51">        int g=10;</span>
+<span class="fc" id="L52">        double m=12.23;</span>
+<span class="fc" id="L53">        double r=(g*m);</span>
+<span class="fc" id="L54">        System.out.println(&quot;Result of the calculation is &quot;+r);</span>
+<span class="fc" id="L55">    }</span>
+    
+    public double disc(int g, double m)
+    {
+<span class="fc" id="L59">        return g-(g*(m/100));</span>
+    }
 
+   
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

@@ -4,35 +4,73 @@
  * and open the template in the editor.
  */
 package edu.nwmissouri.animalList;
+
 /**
  *
  * @author S545113
  */
 public class Xraytetra extends Animal {
- /* This is parameter constructor which initialize the instance variables according to parameters passed
+
+    /* This is parameter constructor which initialize the instance variables according to parameters passed
  * @param name is passed to the constructor
  * 
- */
+     */
     public Xraytetra(String name) {
-<span class="fc" id="L17">        super(name);</span>
-<span class="fc" id="L18">    }</span>
-      /**
-    * This is speak method which is used to to print the message 
-    * print the statement
-    */
-     @Override
-    public void speak()
-    {
-<span class="fc" id="L26">         System.out.println(&quot;I am Xraytetra&quot;);</span>
-<span class="fc" id="L27">    }</span>
+<span class="fc" id="L19">        super(name);</span>
+<span class="fc" id="L20">    }</span>
+
     /**
-    * This is move method which is used to to print the message 
-    * print the statement
-    */
+     * This is speak method which is used to to print the message print the
+     * statement
+     */
     @Override
-    public void move()
-    {
-<span class="fc" id="L35">        System.out.println(&quot;I can swim&quot;);</span>
-<span class="fc" id="L36">    }</span>
+    public void speak() {
+<span class="fc" id="L28">        System.out.println(&quot;I am Xraytetra&quot;);</span>
+<span class="fc" id="L29">    }</span>
+
+    /**
+     * This is move method which is used to to print the message print the
+     * statement
+     */
+    @Override
+    public void move() {
+<span class="fc" id="L37">        System.out.println(&quot;I can swim&quot;);</span>
+<span class="fc" id="L38">    }</span>
+
+    /**
+     * location function
+     */
+    public void location() {
+<span class="fc" id="L44">        System.out.println(&quot;I live in water!&quot;);</span>
+<span class="fc" id="L45">    }</span>
+
+    /**
+     * character function
+     */
+    public void character() {
+<span class="fc" id="L51">        System.out.println(&quot;The xraytetra has a base of different shades of yellow tail.&quot;);</span>
+<span class="fc" id="L52">    }</span>
+
+    /**
+     ** profess function
+     *
+     */
+    public void profess() {
+<span class="nc" id="L59">        double a = 4.5;</span>
+<span class="nc" id="L60">        int b = 4;</span>
+<span class="nc" id="L61">        double c = getXraytetraAddition(a, b);</span>
+<span class="nc" id="L62">        System.out.printf(&quot;I know XraytetraAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L63">    }</span>
+
+    /**
+     * Custom getXraytetraAddtion function
+     *
+     * @param valueOne
+     * @param valueTwo
+     * @return double - sum
+     */
+    public double getXraytetraAddition(double valueOne, int valueTwo) {
+<span class="fc" id="L73">        return valueOne + valueTwo;</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

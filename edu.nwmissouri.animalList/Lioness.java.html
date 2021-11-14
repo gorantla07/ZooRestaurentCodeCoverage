@@ -12,14 +12,18 @@ package edu.nwmissouri.animalList;
  */
 public class Lioness extends Animal {
 
+   
+
     /**
      * Constructor
      *
      * @author Sreebharath Mallampati
      */
     Lioness(String name) {
-<span class="nc" id="L21">        super(name);</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L23">        super(name);</span>
+<span class="fc" id="L24">    }</span>
+
+  
 
     /**
      * This is a speak method
@@ -28,8 +32,8 @@ public class Lioness extends Animal {
      */
     @Override
     public void speak() {
-<span class="nc" id="L31">        System.out.printf(&quot;I'm %s and I belong Lion family.&quot;, this.name);</span>
-<span class="nc" id="L32">    }</span>
+<span class="fc" id="L35">        System.out.printf(&quot;I'm %s and I belong Lion family.&quot;, this.name);</span>
+<span class="fc" id="L36">    }</span>
 
     /**
      * This method is used to print the moving nature
@@ -38,8 +42,21 @@ public class Lioness extends Animal {
      */
     @Override
     public void move() {
-<span class="nc" id="L41">        System.out.println(&quot;When I move, I hunt, hunt, hunt.\n&quot;);</span>
-<span class="nc" id="L42">    }</span>
+<span class="fc" id="L45">        System.out.println(&quot;When I move, I hunt, hunt, hunt.\n&quot;);</span>
+<span class="fc" id="L46">    }</span>
 
+    public String repeatStrings(int times, String word) {
+<span class="fc" id="L49">        String result = &quot;&quot;;</span>
+<span class="fc bfc" id="L50" title="All 2 branches covered.">        for (int i = 0; i &lt; times; i++) {</span>
+<span class="fc" id="L51">            result += word;</span>
+        }
+<span class="fc" id="L53">        return result;</span>
+    }
+
+    public String checkRepetition() {
+<span class="fc" id="L57">        String repeatedString = repeatStrings(6, &quot;Check&quot;);</span>
+<span class="fc" id="L58">        System.out.println(repeatedString);</span>
+<span class="fc" id="L59">        return repeatedString;</span>
+    }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

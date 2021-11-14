@@ -3,7 +3,7 @@
 import java.util.ArrayList;
 
 /**
- *
+ * Provides methods to create and run a group of Koala
  * @author Vinay Manavarthi
  */
 <span class="nc" id="L9">public class KoalaGroup {</span>
@@ -16,30 +16,30 @@ import java.util.ArrayList;
      * @return the number of animals in the group
      */
     public static int create() {
-<span class="nc" id="L19">        myGroup = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L19">        myGroup = new ArrayList&lt;&gt;();</span>
 
-<span class="nc" id="L21">        Koala koalaObj = new Koala(&quot;python&quot;);</span>
-<span class="nc" id="L22">        myGroup.add(koalaObj);</span>
-<span class="nc" id="L23">        myGroup.add(new Koala(&quot;venom&quot;));</span>
-<span class="nc" id="L24">        myGroup.add(new Koala(&quot;Carl&quot;));</span>
+<span class="fc" id="L21">        Koala koalaObj = new Koala(&quot;python&quot;);</span>
+<span class="fc" id="L22">        myGroup.add(koalaObj);</span>
+<span class="fc" id="L23">        myGroup.add(new Koala(&quot;venom&quot;));</span>
+<span class="fc" id="L24">        myGroup.add(new Koala(&quot;Carl&quot;));</span>
 
-<span class="nc" id="L26">        return myGroup.size();</span>
+<span class="fc" id="L26">        return myGroup.size();</span>
     }
 
     /**
      * Run (simulate) the group doing things
      */
     public static void run() {
-<span class="nc" id="L33">        System.out.println(&quot;*****************************************&quot;);</span>
-<span class="nc" id="L34">        System.out.println(&quot;Hey - look at the Koala!&quot;);</span>
-<span class="nc" id="L35">        myGroup.forEach(Koala -&gt; {</span>
-<span class="nc" id="L36">            Koala.speak();</span>
-<span class="nc" id="L37">            Koala.move();</span>
-<span class="nc" id="L38">        });</span>
-<span class="nc" id="L39">        System.out.println(&quot;Nice Koala - that was fun!&quot;);</span>
-<span class="nc" id="L40">        System.out.println(&quot;*****************************************&quot;);</span>
+<span class="fc" id="L33">         System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="fc" id="L34">        System.out.println(&quot;Hey - look at the Koala!&quot;);</span>
+<span class="fc" id="L35">        myGroup.forEach(Koala -&gt; {</span>
+<span class="fc" id="L36">            Koala.speak();</span>
+<span class="fc" id="L37">            Koala.move();</span>
+<span class="fc" id="L38">        });</span>
+<span class="fc" id="L39">        System.out.println(&quot;Nice Koala - that was fun!&quot;);</span>
+<span class="fc" id="L40">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
 
-<span class="nc" id="L42">    }</span>
+<span class="fc" id="L42">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

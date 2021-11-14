@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>ElephantBird.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.animalList</a> &gt; <span class="el_source">ElephantBird.java</span></div><h1>ElephantBird.java</h1><pre class="source lang-java linenums">package edu.nwmissouri.animalList;
 
 /**
- *
+ *Elephant Bird class derived from animal class
+ * 
  * @author Hemanth Kumar Reddy Pidaparathy
  */
 public class ElephantBird extends Animal {
+    
+  
     
     /**
      * ElephantBird name
@@ -12,8 +15,8 @@ public class ElephantBird extends Animal {
      * @param name
      */
     public ElephantBird(String name) {
-<span class="nc" id="L15">        super(name);</span>
-<span class="nc" id="L16">    }</span>
+<span class="fc" id="L18">        super(name);</span>
+<span class="fc" id="L19">    }</span>
     
     /**
      * Elephant Bird speak
@@ -21,8 +24,8 @@ public class ElephantBird extends Animal {
      */
     @Override
     public void speak() {
-<span class="nc" id="L24">        System.out.printf(&quot;I'm %s. I'm an ElephantBird!&quot;,this.name);</span>
-<span class="nc" id="L25">    }</span>
+<span class="fc" id="L27">        System.out.printf(&quot;I'm %s. I'm an ElephantBird!&quot;,this.name);</span>
+<span class="fc" id="L28">    }</span>
     
     /**
      *Elephant Bird move
@@ -30,8 +33,20 @@ public class ElephantBird extends Animal {
      */
     @Override
     public void move() {
-<span class="nc" id="L33">        System.out.println(&quot;When I move, I run,run,run.\n&quot;);</span>
-<span class="nc" id="L34">    }</span>
+<span class="fc" id="L36">        System.out.println(&quot;When I move, I run,run,run.\n&quot;);</span>
+<span class="fc" id="L37">    }</span>
     
+    public void profes(){
+<span class="nc" id="L40">        double a = 2.5;</span>
+<span class="nc" id="L41">        int b = 2;</span>
+<span class="nc" id="L42">        double c = getElephantBirdAddition(a,b);</span>
+<span class="nc" id="L43">        System.out.printf(&quot;I know ElephantBird addition! %4.2f plus %d is %4.2f \n&quot;,a,b,c);</span>
+<span class="nc" id="L44">    }</span>
+
+    double getElephantBirdAddition(double first, int second) {
+<span class="fc" id="L47">        return first+second; //To change body of generated methods, choose Tools | Templates.</span>
+    }
+    
+ 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

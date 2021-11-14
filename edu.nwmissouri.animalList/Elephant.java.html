@@ -5,17 +5,22 @@
  */
 package edu.nwmissouri.animalList;
 
-<span class="nc" id="L8">enum SuperPlanet{</span>
-<span class="nc" id="L9">    EARTH,</span>
-<span class="nc" id="L10">    JUPITER,</span>
-<span class="nc" id="L11">    VENUS,</span>
-<span class="nc" id="L12">    NEPTUNE,</span>
-<span class="nc" id="L13">    URANUS,</span>
-   
-}
 /**
+ * This shows &quot;Super plant&quot;
  *
  * @author Homakesavadurgaprasad OMTRI (S544929)
+ */
+<span class="nc" id="L13">enum SuperPlanet {</span>
+<span class="nc" id="L14">    EARTH,</span>
+<span class="nc" id="L15">    JUPITER,</span>
+<span class="nc" id="L16">    VENUS,</span>
+<span class="nc" id="L17">    NEPTUNE,</span>
+<span class="nc" id="L18">    URANUS,</span>
+
+}
+
+/**
+ * This class defines the nature of the Elephant animal
  */
 public class Elephant extends Animal {
 
@@ -24,47 +29,55 @@ public class Elephant extends Animal {
      *
      * @param name Elephant
      */
-
     public Elephant(String name) {
-<span class="fc" id="L29">        super(name);</span>
-<span class="fc" id="L30">    }</span>
+<span class="fc" id="L33">        super(name);</span>
+<span class="fc" id="L34">    }</span>
 
     /**
-     * This is used to print name of the Animal
+     * This is used to print animal speak
      *
      */
-@Override
+    @Override
     public void speak() {
-<span class="fc" id="L38">        System.out.printf(&quot; I'm %s.I'm an Elephant!&quot;, this.name);</span>
-<span class="fc" id="L39">    }</span>
+<span class="fc" id="L42">        System.out.printf(&quot; I'm %s.I'm an Elephant!&quot;, this.name);</span>
+<span class="fc" id="L43">    }</span>
 
     /**
-     * This is used to print Animal food
+     * This is used to print animal move
      *
      */
-
     @Override
     public void move() {
-<span class="fc" id="L48">        System.out.println(&quot; I could not able to swim in water but would like to walk!. &quot;);</span>
-<span class="fc" id="L49">    }</span>
+<span class="fc" id="L51">        System.out.println(&quot; I could not able to swim in water but would like to walk!. &quot;);</span>
+<span class="fc" id="L52">    }</span>
+
+    /**
+     * This method will initialize the values and calls the sum method
+     */
     public void profess() {
-<span class="nc" id="L51">        double a = 2.5;</span>
-<span class="nc" id="L52">        int b = 5;</span>
-<span class="nc" id="L53">        double c = getElephantAddition(a, b);</span>
-<span class="nc" id="L54">        System.out.printf(&quot;I know ElephantAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
-<span class="nc" id="L55">    }</span>
-public double getElephantAddition(double valueOne, int valueTwo) {
-<span class="fc" id="L57">        return valueOne + valueTwo;</span>
+<span class="nc" id="L58">        double a = 2.5;</span>
+<span class="nc" id="L59">        int b = 5;</span>
+<span class="nc" id="L60">        double c = getElephantAddition(a, b);</span>
+<span class="nc" id="L61">        System.out.printf(&quot;I know ElephantAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L62">    }</span>
+
+    /**
+     * This method will calculate the sum of two numbers
+     *
+     * @param valueOne which is used to pass value of one in addition
+     * @param valueTwo which is used to pass value of two in addition
+     * @return it returns the sum of two numbers
+     */
+    public double getElephantAddition(double valueOne, int valueTwo) {
+<span class="fc" id="L72">        return valueOne + valueTwo;</span>
     }
 
-    public static void main(String[] args) {
-<span class="nc" id="L61">        Elephant Tommy = new Elephant(&quot;Tommy&quot;);</span>
-<span class="nc" id="L62">        Tommy.speak();</span>
-<span class="nc" id="L63">        Tommy.move();</span>
-<span class="nc" id="L64">        Tommy.profess();</span>
-        
-<span class="nc" id="L66">        System.out.println(&quot;My Super Planet is :&quot;+SuperPlanet.EARTH);</span>
-        
-<span class="nc" id="L68">    }</span>
+    /**
+     * The application's entry point This is the main method which makes use of
+     * profess,speak,move method.
+     *
+     * @param args an array of command-line arguments for the application
+     */
+   
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

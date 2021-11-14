@@ -10,31 +10,36 @@ package edu.nwmissouri.animalList;
  * @author Rohan Kondaveeti
  */
 public class Goat extends Animal {
-    public Goat(String name){
-<span class="fc" id="L14">        super(name);</span>
-<span class="fc" id="L15">    }</span>
-    
-   
-    public void eat(){
-<span class="nc" id="L19">        System.out.println(&quot; I eat like Yumm yumm yumm!!&quot;);</span>
-<span class="nc" id="L20">    }</span>
+
+    public Goat(String name) {
+<span class="fc" id="L15">        super(name);</span>
+<span class="fc" id="L16">    }</span>
+
     @Override
-    public void speak(){
-<span class="fc" id="L23">        System.out.println(&quot; I am a goat.. &quot;+this.name);</span>
-<span class="fc" id="L24">    }</span>
-     @Override
-    public void move()
-    {
-<span class="fc" id="L28">        System.out.println(&quot;I can walk with four legs&quot;);</span>
-<span class="fc" id="L29">    }</span>
+    public void speak() {
+<span class="fc" id="L20">        System.out.printf(&quot;I'm an Goat. I'm a pet of %s. \n&quot;, this.name);</span>
+<span class="fc" id="L21">    }</span>
+
+    @Override
+    public void move() {
+<span class="fc" id="L25">        System.out.println(&quot;I can walk with four legs.&quot;);</span>
+<span class="fc" id="L26">    }</span>
+
+    public void eat() {
+<span class="fc" id="L29">        System.out.println(&quot;I eat like Yumm yumm yumm!!&quot;);</span>
+<span class="fc" id="L30">    }</span>
+
+    public void child() {
+<span class="fc" id="L33">        System.out.println(&quot;I can give birth to one child at once.&quot;);</span>
+<span class="fc" id="L34">    }</span>
+
+    public void color() {
+<span class="fc" id="L37">        System.out.println(&quot;I can be in black, brown and white color.&quot;);</span>
+<span class="fc" id="L38">    }</span>
     
    
-    public void child(){
-<span class="nc" id="L33">        System.out.println(&quot; I can give birth to one child at once&quot;);</span>
-<span class="nc" id="L34">    }</span>
-     
-    public void color(){
-<span class="nc" id="L37">        System.out.println(&quot;I can be in black, brown and white color &quot;);</span>
-<span class="nc" id="L38">    }</span>
+    
+   
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

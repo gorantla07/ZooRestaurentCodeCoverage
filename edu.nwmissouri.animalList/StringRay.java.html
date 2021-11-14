@@ -6,7 +6,7 @@
 package edu.nwmissouri.animalList;
 
 /**
- * Provides methods to create and run a group of StringRay
+ * Provides methods to create and run a group of StringRay.
  * @author Saikrishna Vuppala
  */
 public class StringRay extends Animal {
@@ -16,27 +16,36 @@ public class StringRay extends Animal {
      */
 
     public StringRay(String name) {
-<span class="nc" id="L19">        super(name);</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L19">        super(name);</span>
+<span class="fc" id="L20">    }</span>
 
    // @Override
     public void swim() {
-<span class="nc" id="L24">        System.out.println(&quot;Generic animal swim&quot;);</span>
-<span class="nc" id="L25">    }</span>
+<span class="fc" id="L24">        System.out.println(&quot;I swim in water&quot;);</span>
+<span class="fc" id="L25">    }</span>
 
     @Override
     public void move() {
-<span class="nc" id="L29">        System.out.println(&quot;Generic animal movement&quot;);</span>
-<span class="nc" id="L30">    }</span>
+<span class="fc" id="L29">        System.out.println(&quot;When I move I swim&quot;);</span>
+<span class="fc" id="L30">    }</span>
     @Override
     public void speak() {
-<span class="nc" id="L33">        System.out.println(&quot;Generic animal voice&quot;);</span>
-<span class="nc" id="L34">    }</span>
-    public static void main(String[] args){
-<span class="nc" id="L36">        var d = new StringRay(&quot;Saikrishna&quot;);</span>
-<span class="nc" id="L37">                d.swim();</span>
-<span class="nc" id="L38">                d.move();</span>
-<span class="nc" id="L39">                d.speak();</span>
-<span class="nc" id="L40">    }        </span>
+<span class="fc" id="L33">        System.out.println(&quot;I speak shhh..&quot;);</span>
+<span class="fc" id="L34">    }</span>
+    
+    
+    public void confess() {
+<span class="nc" id="L38">        double a = 3.5;</span>
+<span class="nc" id="L39">        int b = 3;</span>
+<span class="nc" id="L40">        double c = getStringRayAddition(a, b);</span>
+<span class="nc" id="L41">        System.out.printf(&quot;I know FloppyAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L42">    }</span>
+
+    public double getStringRayAddition(double valueOne, int valueTwo) {
+<span class="fc" id="L45">    return valueOne + valueTwo;</span>
+    }
+
+  
+    
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

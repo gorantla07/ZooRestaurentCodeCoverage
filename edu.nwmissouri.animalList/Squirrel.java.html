@@ -1,50 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Squirrel.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">ZooRestaurant</a> &gt; <a href="index.source.html" class="el_package">edu.nwmissouri.animalList</a> &gt; <span class="el_source">Squirrel.java</span></div><h1>Squirrel.java</h1><pre class="source lang-java linenums">package edu.nwmissouri.animalList;
 
-<span class="nc" id="L3">enum DaysofWeek{</span>
-<span class="nc" id="L4">    SUNDAY,</span>
-<span class="nc" id="L5">    MONDAY,</span>
-<span class="nc" id="L6">    TUESDAY,</span>
-<span class="nc" id="L7">    WEDNESDAY,</span>
-<span class="nc" id="L8">    THRUSDAY,</span>
-<span class="nc" id="L9">    FRIDAY,</span>
-<span class="nc" id="L10">    SATURDAY</span>
-}
+
 
 /**
- *Squireel class (derived from subclass of superclass Animal)
+ * Squireel class (derived from subclass of superclass Animal)
  * @author Nithin Reddy Kumbham
  */
 public class Squirrel extends Animal{
     /**
      * Aardvark constructor
-     * @param String name1 
+     * @param name1 - name of the Squirrel 
      */
     public Squirrel(String name1){
-<span class="fc" id="L23">        super(name1);</span>
-<span class="fc" id="L24">    }</span>
+<span class="fc" id="L15">        super(name1);</span>
+<span class="fc" id="L16">    }</span>
     
     /**
      * Method which defines type of animal with name
      * @param name 
      */
     public void typeofAnimal(String name){
-<span class="nc" id="L31">        System.out.println(&quot;Hey I am herbivores and my name is &quot;+name+&quot;, I eat only plants &quot;);</span>
-<span class="nc" id="L32">    }</span>
+<span class="nc" id="L23">        System.out.println(&quot;Hey I am herbivores and my name is &quot;+name+&quot;, I eat only plants &quot;);</span>
+<span class="nc" id="L24">    }</span>
     
- 
+    /**
+     * Method which defines age of animal
+     */
     public void age(){
-<span class="fc" id="L36">        System.out.println(&quot;My age is 6 years&quot;);</span>
-<span class="fc" id="L37">    }</span>
+<span class="fc" id="L30">        System.out.println(&quot;My age is 6 years&quot;);</span>
+<span class="fc" id="L31">    }</span>
     
-    
+    /**
+     * Method which defines height of animal
+     */
     public void height(){
-<span class="fc" id="L41">        System.out.println(&quot;My height is 14.3 cm&quot;);</span>
-<span class="fc" id="L42">    }</span>
+<span class="fc" id="L37">        System.out.println(&quot;My height is 14.3 cm&quot;);</span>
+<span class="fc" id="L38">    }</span>
     
-    
+    /**
+     * Method which defines weight of animal
+     */
     public void weight(){
-<span class="fc" id="L46">        System.out.println(&quot;My weight is 16 lbs&quot;);</span>
-<span class="fc" id="L47">    }</span>
+<span class="fc" id="L44">        System.out.println(&quot;My weight is 16 lbs&quot;);</span>
+<span class="fc" id="L45">    }</span>
     
     /**
      * A method which returns height and weight of an animal combined in double
@@ -54,65 +52,55 @@ public class Squirrel extends Animal{
      */
     
     public double heightweight(double height, double weight){
-<span class="fc" id="L57">        return height + weight;</span>
+<span class="fc" id="L55">        return height + weight;</span>
     }
     
-    public void isDisabled(){
-<span class="fc" id="L61">        System.out.println(&quot;Are u kidding !, I am perfectly alright&quot;);</span>
-<span class="fc" id="L62">    }</span>
-    
-    @Override
-    public void speak(){
-<span class="fc" id="L66">        System.out.println(&quot;I make a keech keech Sound&quot;);</span>
-<span class="fc" id="L67">    }</span>
-    
-    @Override
-    public void move(){
-<span class="fc" id="L71">        System.out.println(&quot;I move with four legs&quot;);</span>
-<span class="fc" id="L72">    }</span>
-    
-    
-    public void sleep(){
-<span class="fc" id="L76">        System.out.println(&quot;I njoy my sleep, I sleep for 10 hours&quot;);</span>
-<span class="fc" id="L77">    }</span>
-    
-    
-    public void gender(){
-<span class="fc" id="L81">        System.out.println(&quot;I am female&quot;);</span>
-<span class="fc" id="L82">    }</span>
     
     /**
-     * Method void which multiplies a &amp; b
+     * Method which defines whether animal is disabled or not
      */
-    public void functionMultiply(){
-<span class="nc" id="L88">        int a = 10;</span>
-<span class="nc" id="L89">        int b = 15;</span>
-<span class="nc" id="L90">        System.out.println(&quot;Result of a*b is : &quot;+a*b);</span>
-<span class="nc" id="L91">    }</span>
+    public void isDisabled(){
+<span class="fc" id="L63">        System.out.println(&quot;Are u kidding !, I am perfectly alright&quot;);</span>
+<span class="fc" id="L64">    }</span>
     
-    public static void main(String args[]){
-<span class="nc" id="L94">        Squirrel pinto = new Squirrel(&quot;pinto&quot;);</span>
-<span class="nc" id="L95">        double height = 5.4;</span>
-<span class="nc" id="L96">        double weight = 15.9;</span>
-<span class="nc" id="L97">        double result = pinto.heightweight(height,weight);</span>
-<span class="nc" id="L98">        pinto.typeofAnimal(&quot;pinto&quot;);</span>
-<span class="nc" id="L99">        pinto.age();</span>
-<span class="nc" id="L100">        pinto.move();</span>
-<span class="nc" id="L101">        pinto.speak();</span>
-<span class="nc" id="L102">        pinto.isDisabled();</span>
-<span class="nc" id="L103">        pinto.functionMultiply();</span>
-<span class="nc" id="L104">        System.out.println(&quot;Height and weight of me combined is : &quot;+result);</span>
-        
-        //enum
-<span class="nc" id="L107">        DaysofWeek monday = DaysofWeek.MONDAY;</span>
-<span class="nc" id="L108">        DaysofWeek sunday = DaysofWeek.SUNDAY;</span>
-<span class="nc bnc" id="L109" title="All 2 branches missed.">        if(DaysofWeek.MONDAY == monday){</span>
-<span class="nc" id="L110">            System.out.println(&quot;Today is Monday, Gotta rush to work&quot;);</span>
-        }
-<span class="nc bnc" id="L112" title="All 2 branches missed.">        if(DaysofWeek.SUNDAY == sunday){</span>
-<span class="nc" id="L113">            System.out.println(&quot;Today is Sunday, The weekend is gonna complete&quot;);</span>
-        }
-<span class="nc" id="L115">    }</span>
+    /**
+     * Method which defines sound of animal
+     */
+    @Override
+    public void speak(){
+<span class="fc" id="L71">        System.out.println(&quot;I make a keech keech Sound&quot;);</span>
+<span class="fc" id="L72">    }</span>
+    
+    /**
+     * Method which defines movement of animal
+     */
+    @Override
+    public void move(){
+<span class="fc" id="L79">        System.out.println(&quot;I move with four legs&quot;);</span>
+<span class="fc" id="L80">    }</span>
+    
+    /**
+     * Method which defines sleep duration of animal
+     */
+    public void sleep(){
+<span class="fc" id="L86">        System.out.println(&quot;I njoy my sleep, I sleep for 10 hours&quot;);</span>
+<span class="fc" id="L87">    }</span>
+    
+    /**
+     * Method which defines gender of animal
+     */
+    public void gender(){
+<span class="fc" id="L93">        System.out.println(&quot;I am female&quot;);</span>
+<span class="fc" id="L94">    }</span>
+    
+    
+    public void functionMultiply(){
+<span class="nc" id="L98">        int a = 10;</span>
+<span class="nc" id="L99">        int b = 15;</span>
+<span class="nc" id="L100">        System.out.println(&quot;Result of a*b is : &quot;+a*b);</span>
+<span class="nc" id="L101">    }</span>
+    
+    
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

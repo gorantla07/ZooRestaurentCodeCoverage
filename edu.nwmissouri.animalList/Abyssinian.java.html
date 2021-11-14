@@ -6,39 +6,40 @@
 package edu.nwmissouri.animalList;
 
 /**
- *
- * @author Vamsi krishna Areti (S5449902)
+ *Abyssinian class is derived from animal class
+ * @author Vamsi krishna Areti (S544902)
  */
 //class Abyssinian is extending the animal class
 public class Abyssinian extends Animal {
-    //creating constructor for Abyssinian class
+   
    public Abyssinian(String name) 
    {
-<span class="nc" id="L17">       super(name);</span>
-<span class="nc" id="L18">   }</span>
-   //overriding the talk method
+<span class="fc" id="L17">       super(name);</span>
+<span class="fc" id="L18">   }</span>
+   //overriding the speak method
     @Override
    public void speak()
     {
-<span class="nc" id="L23">        System.out.println(&quot;I'm Abyssinia.&quot;);</span>
-<span class="nc" id="L24">    }</span>
+<span class="fc" id="L23">        System.out.println(&quot;I'm Abyssinian.&quot;);</span>
+<span class="fc" id="L24">    }</span>
    //overriding the eat method
    
     public void eat()
     {
 <span class="nc" id="L29">        System.out.println(&quot;I eat Purina Pro Plan True Nature Adult Grain Free Natural Salmon &amp; Egg Recipe.&quot;);</span>
 <span class="nc" id="L30">    }</span>
-    //overriding the walk method
+    //overriding the move method
    @Override
     public void move()
     {
-<span class="nc" id="L35">        System.out.println(&quot;I walk on four legs.&quot;);</span>
-<span class="nc" id="L36">    }</span>
-     public static void main(String[] args) {
-<span class="nc" id="L38">        var aby = new Abyssinian(&quot;Areti&quot;);</span>
-<span class="nc" id="L39">        aby.speak();</span>
-<span class="nc" id="L40">        aby.move();</span>
-<span class="nc" id="L41">        aby.eat();</span>
+<span class="fc" id="L35">        System.out.println(&quot;I walk on four legs.&quot;);</span>
+<span class="fc" id="L36">    }</span>
+    public void visible(){
+<span class="fc" id="L38">        System.out.println(&quot;Vamsi Krishna Areti&quot;);</span>
+<span class="fc" id="L39">    }</span>
+    public void breed(){
+<span class="nc" id="L41">        System.out.println(&quot;I am one of the breed from cat family.&quot;);</span>
 <span class="nc" id="L42">    }</span>
+     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

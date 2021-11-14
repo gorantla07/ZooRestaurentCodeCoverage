@@ -7,35 +7,31 @@
  */
 public class Lion extends Animal {
 
-    /**
-     * Lion constructor
-     *
-     * @param name - the name of this Lion
-     */
+  
     public Lion(String name) {
-<span class="fc" id="L16">        super(name);</span>
-<span class="fc" id="L17">    }</span>
+<span class="fc" id="L12">        super(name);</span>
+<span class="fc" id="L13">    }</span>
 
     @Override
     public void speak() {
-<span class="fc" id="L21">        System.out.printf(&quot;I'm %s. I'm an Lion!&quot;, this.name);</span>
-<span class="fc" id="L22">    }</span>
+<span class="fc" id="L17">        System.out.printf(&quot;I'm %s. I'm an Lion!&quot;, this.name);</span>
+<span class="fc" id="L18">    }</span>
 
     @Override
     public void move() {
-<span class="fc" id="L26">        System.out.println(&quot;When I move, I walk, walk, walk.&quot;);</span>
-<span class="fc" id="L27">    }</span>
+<span class="fc" id="L22">        System.out.println(&quot;When I move, I walk, walk, walk.&quot;);</span>
+<span class="fc" id="L23">    }</span>
     
     public void speed() {
-<span class="fc" id="L30">        System.out.println(&quot;I can run with a speed of 100 miles/hr&quot;);</span>
-<span class="fc" id="L31">    }</span>
+<span class="fc" id="L26">        System.out.println(&quot;I can run with a speed of 100 miles/hr&quot;);</span>
+<span class="fc" id="L27">    }</span>
 
     public void profess() {
-<span class="fc" id="L34">        double a = 5.2;</span>
-<span class="fc" id="L35">        int b = 2;</span>
-<span class="fc" id="L36">        double c = getLionAddition(a, b);</span>
-<span class="fc" id="L37">        System.out.printf(&quot;I know LionAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
-<span class="fc" id="L38">    }</span>
+<span class="fc" id="L30">        double a = 5.2;</span>
+<span class="fc" id="L31">        int b = 2;</span>
+<span class="fc" id="L32">        double c = getLionAddition(a, b);</span>
+<span class="fc" id="L33">        System.out.printf(&quot;I know LionAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="fc" id="L34">    }</span>
 
     /**
      * Custom Lion function - your class must use a unique function name
@@ -47,16 +43,10 @@ public class Lion extends Animal {
      * @return double sum
      */
     public double getLionAddition(double valueOne, int valueTwo) {
-<span class="fc" id="L50">        return valueOne + valueTwo;</span>
+<span class="fc" id="L46">        return valueOne + valueTwo;</span>
     }
 
-    public static void main(String[] args) {
-<span class="nc" id="L54">        var a = new Lion(&quot;Tester&quot;);</span>
-<span class="nc" id="L55">        a.speak();</span>
-<span class="nc" id="L56">        a.move();</span>
-<span class="nc" id="L57">        a.profess();</span>
-<span class="nc" id="L58">        a.speed();</span>
-<span class="nc" id="L59">    }</span>
+   
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

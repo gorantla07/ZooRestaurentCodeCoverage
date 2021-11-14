@@ -10,25 +10,37 @@ package edu.nwmissouri.animalList;
  * @author Sujithreddy
  */
 public class Unicorn extends Animal {
+
+
     /**
      * unicorn constructor
+     *
      * @param name - the name of this instance of an animal
      */
-    
-    public Unicorn(String name){
-<span class="nc" id="L19">        super(name);</span>
-<span class="nc" id="L20">    }</span>
+    public Unicorn(String name) {
+<span class="fc" id="L21">        super(name);</span>
+<span class="fc" id="L22">    }</span>
+   
 
     @Override
     public void move() {
-<span class="nc" id="L24">        System.out.println(&quot;I will climb trees &quot;);</span>
-<span class="nc" id="L25">    }</span>
+<span class="fc" id="L27">        System.out.println(&quot;I will climb trees &quot;);</span>
+<span class="fc" id="L28">    }</span>
 
     @Override
     public void speak() {
-<span class="nc" id="L29">         System.out.printf(&quot;I'm %s. I'm an unicorn! \n&quot;, this.name);</span>
-<span class="nc" id="L30">    }</span>
-    
-    
+<span class="fc" id="L32">        System.out.printf(&quot;I'm %s. I'm an unicorn! \n&quot;, this.name);</span>
+<span class="fc" id="L33">    }</span>
+
+    public double calculateAreaOfCircle(double radius) {
+<span class="fc" id="L36">        return Math.PI * radius *radius;</span>
+    }
+
+    public double getAreaOfCircle() {
+<span class="fc" id="L40">        double areaOfCircle = calculateAreaOfCircle(4);</span>
+<span class="fc" id="L41">        System.out.println(&quot;The area of circle with radius 4 is &quot; + areaOfCircle);</span>
+<span class="fc" id="L42">        return areaOfCircle;</span>
+    }
+
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

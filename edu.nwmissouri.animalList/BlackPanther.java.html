@@ -5,6 +5,7 @@
  * @author Hemanth Sai Reddy Velamuri
  */
 public class BlackPanther extends Animal {
+ 
     
     /**
      * String declaration.
@@ -12,8 +13,8 @@ public class BlackPanther extends Animal {
      * @param name
      */
     public BlackPanther(String name) {
-<span class="nc" id="L15">        super(name);</span>
-<span class="nc" id="L16">    }</span>
+<span class="fc" id="L16">        super(name);</span>
+<span class="fc" id="L17">    }</span>
     
     /**
      * BlackPanther Speak
@@ -21,8 +22,8 @@ public class BlackPanther extends Animal {
      */
     @Override
     public void speak() {
-<span class="nc" id="L24">        System.out.printf(&quot;I'm %s. I am a BlackPanther!&quot;,this.name);</span>
-<span class="nc" id="L25">    }</span>
+<span class="fc" id="L25">        System.out.printf(&quot;I'm %s. I'm an BlackPanther!&quot;,this.name);</span>
+<span class="fc" id="L26">    }</span>
     
     /**
      *
@@ -30,7 +31,20 @@ public class BlackPanther extends Animal {
      */
     @Override
     public void move() {
-<span class="nc" id="L33">        System.out.println(&quot;When I move, I run, run, run.\n&quot;);</span>
-<span class="nc" id="L34">    }</span>
+<span class="fc" id="L34">        System.out.println(&quot;When I move, I run, run, run.\n&quot;);</span>
+<span class="fc" id="L35">    }</span>
+    
+    public void profes(){
+<span class="nc" id="L38">        double a = 2.5;</span>
+<span class="nc" id="L39">        int b = 2;</span>
+<span class="nc" id="L40">        double c = getBlackPantherAddition(a,b);</span>
+<span class="nc" id="L41">        System.out.printf(&quot;I know BlackPanther addition! %4.2f plus %d is %4.2f \n&quot;,a,b,c);</span>
+<span class="nc" id="L42">    }</span>
+
+    public double getBlackPantherAddition(double first, int second) {
+<span class="fc" id="L45">        return first+second; //To change body of generated methods, choose Tools | Templates.</span>
+    }
+    
+  
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

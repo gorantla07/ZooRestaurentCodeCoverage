@@ -5,7 +5,44 @@
  *
  * @author Dr. Case
  */
-public class Aardvark extends Animal {
+public class Aardvark extends Animal implements Runnable {
+    
+    
+<span class="fc" id="L11">    private boolean isAlive = true;</span>
+<span class="fc" id="L12">    private int age = 1;</span>
+<span class="fc" id="L13">    private double weight_pounds = 8.0;</span>
+
+    public boolean isIsAlive() {
+<span class="nc" id="L16">        return isAlive;</span>
+    }
+
+    public void setIsAlive(boolean isAlive) {
+<span class="nc" id="L20">        this.isAlive = isAlive;</span>
+<span class="nc" id="L21">    }</span>
+
+    public int getAge() {
+<span class="nc" id="L24">        return age;</span>
+    }
+
+    public void setAge(int age) {
+<span class="nc" id="L28">        this.age = age;</span>
+<span class="nc" id="L29">    }</span>
+
+    public double getWeight_pounds() {
+<span class="nc" id="L32">        return weight_pounds;</span>
+    }
+
+    public void setWeight_pounds(double weight_pounds) {
+<span class="nc" id="L36">        this.weight_pounds = weight_pounds;</span>
+<span class="nc" id="L37">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L41">        return &quot;Aardvark{&quot; + &quot;isAlive=&quot; + isAlive + &quot;, age=&quot; + age + &quot;, weight_pounds=&quot; + weight_pounds + '}';</span>
+    }
+    
+    
+    
 
     /**
      * Aardvark constructor
@@ -13,25 +50,25 @@ public class Aardvark extends Animal {
      * @param name - the name of this aardvark    
      */
     public Aardvark(String name) {
-<span class="fc" id="L16">        super(name);</span>
-<span class="fc" id="L17">    }</span>
+<span class="fc" id="L53">        super(name);</span>
+<span class="fc" id="L54">    }</span>
 
     @Override
     public void speak() {
-<span class="fc" id="L21">        System.out.printf(&quot;I'm %s. I'm an Aardvark!&quot;, this.name);</span>
-<span class="fc" id="L22">    }</span>
+<span class="fc" id="L58">        System.out.printf(&quot;I'm %s. I'm an Aardvark!&quot;, this.name);</span>
+<span class="fc" id="L59">    }</span>
 
     @Override
     public void move() {
-<span class="fc" id="L26">        System.out.println(&quot;When I move, I walk, walk, walk.&quot;);</span>
-<span class="fc" id="L27">    }</span>
+<span class="fc" id="L63">        System.out.println(&quot;When I move, I walk, walk, walk.&quot;);</span>
+<span class="fc" id="L64">    }</span>
 
     public void profess() {
-<span class="nc" id="L30">        double a = 2.5;</span>
-<span class="nc" id="L31">        int b = 2;</span>
-<span class="nc" id="L32">        double c = getAardvarkAddition(a, b);</span>
-<span class="nc" id="L33">        System.out.printf(&quot;I know AardvarkAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
-<span class="nc" id="L34">    }</span>
+<span class="nc" id="L67">        double a = 2.5;</span>
+<span class="nc" id="L68">        int b = 2;</span>
+<span class="nc" id="L69">        double c = getAardvarkAddition(a, b);</span>
+<span class="nc" id="L70">        System.out.printf(&quot;I know AardvarkAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L71">    }</span>
 
     /**
      * Custom Aardvark function - your class must use a unique function name
@@ -43,15 +80,21 @@ public class Aardvark extends Animal {
      * @return double sum
      */
     public double getAardvarkAddition(double valueOne, int valueTwo) {
-<span class="fc" id="L46">        return valueOne + valueTwo;</span>
+<span class="fc" id="L83">        return valueOne + valueTwo;</span>
     }
 
-    public static void main(String[] args) {
-<span class="nc" id="L50">        var a = new Aardvark(&quot;Tester&quot;);</span>
-<span class="nc" id="L51">        a.speak();</span>
-<span class="nc" id="L52">        a.move();</span>
-<span class="nc" id="L53">        a.profess();</span>
-<span class="nc" id="L54">    }</span>
+
+
+    /**
+     * An instance of an Aardvark is now Runnable - 
+     * call this run() method to see all the Aardvark tricks.
+     */
+    @Override
+    public void run() {
+<span class="nc" id="L94">        this.speak();</span>
+<span class="nc" id="L95">        this.move();</span>
+<span class="nc" id="L96">        this.profess();</span>
+<span class="nc" id="L97">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

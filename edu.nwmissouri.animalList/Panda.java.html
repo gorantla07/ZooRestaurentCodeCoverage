@@ -18,19 +18,44 @@ public class Panda extends Animal {
      * @param name - the name of this Panda
      */
     public Panda(String name) {
-<span class="nc" id="L21">        super(name);</span>
-<span class="nc" id="L22">    }</span>
+<span class="fc" id="L21">        super(name);</span>
+<span class="fc" id="L22">    }</span>
 
-
+    /**
+     * speak overrides function in animal class
+     */
     @Override
     public void speak() {
-<span class="nc" id="L27">        System.out.println(&quot;Hi I am a &quot; + this.name + &quot;! I Squeak.. &quot;);</span>
-<span class="nc" id="L28">    }</span>
-
+<span class="fc" id="L29">        System.out.println(&quot;Hi I am a &quot; + this.name + &quot;! I Squeak.. &quot;);</span>
+<span class="fc" id="L30">    }</span>
+    /**
+     * move overrides function in animal class
+     */
     @Override
     public void move() {
-<span class="nc" id="L32">        System.out.println(&quot;I am a lazy animal and love to roll on ground&quot;);</span>
-<span class="nc" id="L33">    }</span>
+<span class="fc" id="L36">        System.out.println(&quot;I am a lazy animal and love to roll on ground&quot;);</span>
+<span class="fc" id="L37">    }</span>
+    /**
+     * function pandaType
+     */
+    public void pandaType(){
+<span class="nc" id="L42">        String firstName = &quot;RED&quot;;</span>
+<span class="nc" id="L43">        String lastName = &quot;PANDA&quot;;</span>
+        
+<span class="nc" id="L45">        System.out.println(&quot;There are 2 types of panda, RED panda ,BLACK-WHITE pandas....&quot;);</span>
+<span class="nc" id="L46">        String fullName = fullname(firstName,lastName);</span>
+<span class="nc" id="L47">       System.out.println(&quot;My full name is : &quot;+fullName);</span>
+
+<span class="nc" id="L49">    }</span>
+    /**
+     * 
+     * @param fname
+     * @param lname
+     * @return 
+     */
+        public String fullname(String fname,String lname){
+<span class="fc" id="L57">        return fname+lname;</span>
+    }
     
  /*    @Override
      public void looks() {

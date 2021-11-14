@@ -5,7 +5,7 @@ import java.util.ArrayList;
 /**
  * Provides methods to create and run a group of Cats
  *
- * @author Denise Case
+ * @author Maneesh Sake
  */
 <span class="nc" id="L10">public class CatGroup {</span>
 
@@ -17,29 +17,33 @@ import java.util.ArrayList;
      * @return the number of animals in the group
      */
     public static int create() {
-<span class="nc" id="L20">        myGroup = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L20">        myGroup = new ArrayList&lt;&gt;();</span>
         
-<span class="nc" id="L22">        Cat a = new Cat(&quot;Abbie&quot;);</span>
-<span class="nc" id="L23">        myGroup.add(a);</span>
-<span class="nc" id="L24">        myGroup.add(new Cat(&quot;Boss&quot;));</span>
-<span class="nc" id="L25">        myGroup.add(new Cat(&quot;Cass&quot;));</span>
+<span class="fc" id="L22">        Cat a = new Cat(&quot;Abbie&quot;);</span>
+<span class="fc" id="L23">        myGroup.add(a);</span>
+<span class="fc" id="L24">        myGroup.add(new Cat(&quot;Boss&quot;));</span>
+<span class="fc" id="L25">        myGroup.add(new Cat(&quot;Cass&quot;));</span>
 
-<span class="nc" id="L27">        return myGroup.size();</span>
+<span class="fc" id="L27">        return myGroup.size();</span>
     }
-
+    
     /**
      * Run (simulate) the group doing things
      */
     public static void run() {
-<span class="nc" id="L34">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
-<span class="nc" id="L35">        System.out.println(&quot;Hey - look at the cats!&quot;);</span>
-<span class="nc" id="L36">        myGroup.forEach(cat -&gt; {</span>
-<span class="nc" id="L37">            cat.speak();</span>
-<span class="nc" id="L38">            cat.move();</span>
-<span class="nc" id="L39">        });</span>
-<span class="nc" id="L40">        System.out.println(&quot;Nice cats - that was fun!&quot;);</span>
-<span class="nc" id="L41">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
-<span class="nc" id="L42">    }</span>
+<span class="fc" id="L34">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="fc" id="L35">        System.out.println(&quot;Hey - look at the cats!&quot;);</span>
+<span class="fc" id="L36">        myGroup.forEach(cat -&gt; {</span>
+<span class="fc" id="L37">            cat.speak();</span>
+<span class="fc" id="L38">            cat.move();</span>
+<span class="fc" id="L39">            cat.profess();</span>
+<span class="fc" id="L40">        });</span>
+<span class="fc" id="L41">        System.out.println(&quot;Nice cats - that was fun!&quot;);</span>
+<span class="fc" id="L42">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="fc" id="L43">        String message= &quot;Thank You for Choosing Me !.&quot;;</span>
+<span class="fc" id="L44">        System.out.println(message);</span>
+        
+<span class="fc" id="L46">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

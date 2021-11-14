@@ -6,22 +6,60 @@
  */
 public class BlackJaguar extends Animal {
     
+    /**
+     *
+     * @param name
+     */
     public BlackJaguar(String name) {
-<span class="nc" id="L10">        super(name);</span>
-<span class="nc" id="L11">    }</span>
+<span class="nc" id="L14">        super(name);</span>
+<span class="nc" id="L15">    }</span>
     
+    
+    /**
+     *speak method
+     */
     @Override
     public void speak(){
-<span class="nc" id="L15">        System.out.printf(&quot;I am %s. I am Jaguar!&quot;, this.name);</span>
-<span class="nc" id="L16">    }</span>
+<span class="nc" id="L23">        System.out.printf(&quot;I am %s. I am Jaguar!&quot;, this.name);</span>
+<span class="nc" id="L24">    }</span>
     
+    /**
+     *move method
+     */
     @Override
     public void move(){
-<span class="nc" id="L20">        System.out.println(&quot;When I move, I walk.\n&quot;);</span>
-<span class="nc" id="L21">    }</span>
-     public void behaviour(){
-<span class="nc" id="L23">        System.out.println(&quot;I am very aggressive and hunt alone&quot;);</span>
-<span class="nc" id="L24">    }</span>
+<span class="nc" id="L31">        System.out.println(&quot;When I move, I walk.\n&quot;);</span>
+<span class="nc" id="L32">    }</span>
+
+    /**
+     *behaviour method
+     */
+    public void behaviour(){
+<span class="nc" id="L38">        System.out.println(&quot;I am very aggressive and hunt alone&quot;);</span>
+<span class="nc" id="L39">    }</span>
+
+    /**
+     *
+     * @param fs
+     * @param ls
+     * @return
+     */
+    public String name(String fs,String ls){
+<span class="nc" id="L48">         return fs+ls;</span>
+     }
+
+    /**
+     *details method
+     */
+    public void details(){
+<span class="nc" id="L55">         System.out.println(&quot;name:&quot;+name(&quot;naveen&quot;,&quot;kanaparthi&quot;));</span>
+<span class="nc" id="L56">     }</span>
+
+    /**
+     *
+     * @param args
+     */
     }
+    
 
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

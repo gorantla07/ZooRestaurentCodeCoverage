@@ -6,16 +6,18 @@
 package edu.nwmissouri.animalList;
 
 /**
- *
+ * CongoLion class is derived from class animal
  * @author Akshay krishna kintali
  * 
  */
 //Inheritance taking place here
 public class CongoLion extends Animal {
+    
+
     public CongoLion(String name) 
    {
-<span class="nc" id="L17">       super(name);</span>
-<span class="nc" id="L18">   }</span>
+<span class="fc" id="L19">       super(name);</span>
+<span class="fc" id="L20">   }</span>
 
     /**
      *
@@ -23,30 +25,33 @@ public class CongoLion extends Animal {
     //color method created for lion
    public void color()
     {
-<span class="nc" id="L26">        System.out.println(&quot;I am lion and my color is deep orange brown&quot;);</span>
-<span class="nc" id="L27">    }</span>
+<span class="nc" id="L28">        System.out.println(&quot;I am lion and my color is deep orange brown&quot;);</span>
+<span class="nc" id="L29">    }</span>
    //sound method created for lion
    @Override
     public void speak()
     {
-<span class="nc" id="L32">        System.out.println(&quot;I sounds as roar&quot;);</span>
-<span class="nc" id="L33">    }</span>
+<span class="fc" id="L34">        System.out.println(&quot;I sounds as roar&quot;);</span>
+<span class="fc" id="L35">    }</span>
    
    //place method created for lion
     public void place()
     {
-<span class="nc" id="L38">        System.out.println(&quot;I generally lives in Africa&quot;);</span>
-<span class="nc" id="L39">    }</span>
+<span class="fc" id="L40">        System.out.println(&quot;I generally lives in Africa&quot;);</span>
+<span class="fc" id="L41">    }</span>
     @Override
     public void move()
     {
-<span class="nc" id="L43">        System.out.println(&quot;I move with four legs&quot;);</span>
-<span class="nc" id="L44">    }</span>
-     public static void main(String[] args) {
-<span class="nc" id="L46">        var CL = new Aardvark(&quot;Kintali&quot;);</span>
-<span class="nc" id="L47">        CL.speak();</span>
-<span class="nc" id="L48">        CL.move();</span>
-<span class="nc" id="L49">    }</span>
+<span class="fc" id="L45">        System.out.println(&quot;I move with four legs&quot;);</span>
+<span class="fc" id="L46">    }</span>
+    public String name(String s,String n){
+<span class="nc" id="L48">        return s+n;</span>
+        
+    }
+    public void display(){
+<span class="nc" id="L52">        System.out.println(&quot;my name:&quot;+name(&quot;akshay&quot;,&quot;kintali&quot;));</span>
+<span class="nc" id="L53">    }</span>
+   
     
     
 }

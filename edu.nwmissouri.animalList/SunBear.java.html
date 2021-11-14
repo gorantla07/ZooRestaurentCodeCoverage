@@ -5,27 +5,49 @@
  */
 package edu.nwmissouri.animalList;
 
+
 /**
- *
- * @author Satish Vagulapuram
+ * This class defines the nature of the SunBear animal
+ * @author Satish Vagulapuram (S544905)
  */
 public class SunBear extends Animal {
     
     // Creating a Constructor that takes String name and calls super()
 
     public SunBear(String name) {
-<span class="nc" id="L17">        super(name);</span>
-<span class="nc" id="L18">    }</span>
-
+<span class="fc" id="L18">        super(name);</span>
+<span class="fc" id="L19">    }</span>
+/**
+ *  Overriding speak method extended from animal
+ */
     @Override
     public void speak() {
-<span class="nc" id="L22">        System.out.println(&quot;I sound like hen-Clucking sound&quot;);</span>
-<span class="nc" id="L23">    }</span>
+<span class="fc" id="L25">        System.out.printf(&quot;I'm %s. I'm an SunBear!&quot;, this.name);</span>
+<span class="fc" id="L26">    }</span>
 
     @Override
     public void move() {
-<span class="nc" id="L27">        System.out.println(&quot;I climb trees&quot;);</span>
+<span class="fc" id="L30">        System.out.println(&quot;I climb trees&quot;);</span>
 
-<span class="nc" id="L29">    }</span>
+<span class="fc" id="L32">    }</span>
+    public void add() {
+<span class="nc" id="L34">        double a = 2.5;</span>
+<span class="nc" id="L35">        int b = 2;</span>
+<span class="nc" id="L36">        double c = getSunBearAddition(a, b);</span>
+<span class="nc" id="L37">        System.out.printf(&quot;I know SunBearAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L38">    }</span>
+
+    /**
+     * Custom SunBear function 
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getSunBearAddition(double valueOne, int valueTwo) {
+<span class="fc" id="L48">        return valueOne + valueTwo;</span>
+    }
+
+  
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

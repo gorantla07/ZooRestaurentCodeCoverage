@@ -11,29 +11,46 @@ package edu.nwmissouri.animalList;
  */
 public class Shoebill extends Animal {
     public Shoebill(String name){
-<span class="nc" id="L14">        super(name);</span>
-<span class="nc" id="L15">    }</span>
+<span class="fc" id="L14">        super(name);</span>
+<span class="fc" id="L15">    }</span>
 
     @Override
     public void speak() {
-<span class="nc" id="L19">        System.out.println(&quot;I'm a Shoebill \n---------------\nsound like a Machine Gun!&quot;);</span>
-<span class="nc" id="L20">    }</span>
+<span class="fc" id="L19">        System.out.println(&quot;I'm a Shoebill sound like a Machine Gun!&quot;);</span>
+<span class="fc" id="L20">    }</span>
 
     @Override
     public void move() {
-<span class="nc" id="L24">        System.out.println(&quot;When I move, I fly and walk.&quot;);</span>
-<span class="nc" id="L25">    }</span>
+<span class="fc" id="L24">        System.out.println(&quot;When I move, I fly and walk.&quot;);</span>
+<span class="fc" id="L25">    }</span>
 
    // @Override
     public void eat() {
-<span class="nc" id="L29">        System.out.println(&quot;I Love eating Fish&quot;);</span>
-<span class="nc" id="L30">    }</span>
-    public static void main(String[] args){
-<span class="nc" id="L32">        var sb = new Shoebill(&quot;Gayatri&quot;);</span>
-<span class="nc" id="L33">        sb.speak();</span>
-<span class="nc" id="L34">        sb.eat();</span>
-<span class="nc" id="L35">        sb.move();</span>
-<span class="nc" id="L36">    }</span>
+<span class="fc" id="L29">        System.out.println(&quot;I Love eating Fish&quot;);</span>
+<span class="fc" id="L30">    }</span>
+    
+     public void confess() {
+<span class="nc" id="L33">        double a = 3.7;</span>
+<span class="nc" id="L34">        int b = 5;</span>
+<span class="nc" id="L35">        double c = getShoebillAddition(a, b);</span>
+<span class="nc" id="L36">        System.out.printf(&quot;I know ShoebillAddition! %4.2f plus %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L37">    }</span>
+     /**
+     * Custom getShoebillAddtion function 
+     *
+     * @param valueOne double input
+     * @param valueTwo int input
+     * @return double sum
+     */
+    public double getShoebillAddition(double valueOne, int valueTwo) {
+<span class="fc" id="L46">        return valueOne + valueTwo;</span>
+    }
+<span class="nc" id="L48">    public enum Seasons {</span>
+<span class="nc" id="L49">        FALL,</span>
+<span class="nc" id="L50">        SPRING,</span>
+<span class="nc" id="L51">        SUMMER;</span>
+    }
+  
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

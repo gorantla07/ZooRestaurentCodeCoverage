@@ -7,22 +7,41 @@ package edu.nwmissouri.animalList;
  * @author Pandiri Govinda Reddy
  */
 public class YukonMoose extends Animal{
-    /**
-     * Constructor
-     * @param name 
-     */
-        public YukonMoose(String name){
-<span class="nc" id="L15">        super(name);</span>
-<span class="nc" id="L16">    }</span>
-    public void size(){
-<span class="nc" id="L18">        System.out.println(&quot; I'm 6 feet tall....&quot;+this.name);</span>
-<span class="nc" id="L19">    }</span>
-    public void survive(){
-<span class="nc" id="L21">        System.out.println(&quot; I can survive under 80 degree celsius&quot;);</span>
-<span class="nc" id="L22">    }</span>
-    public void behaviour(){
-<span class="nc" id="L24">        System.out.println(&quot; I can be very aggresive&quot;);</span>
-<span class="nc" id="L25">    }</span>
+
+    float height() {
+<span class="nc" id="L12">        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;); //To change body of generated methods, choose Tools | Templates.</span>
+    }
+
+    @Override
+    public void speak() {
+<span class="nc" id="L17">        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;); //To change body of generated methods, choose Tools | Templates.</span>
+    }
+
+    @Override
+    public void move() {
+<span class="nc" id="L22">        throw new UnsupportedOperationException(&quot;Not supported yet.&quot;); //To change body of generated methods, choose Tools | Templates.</span>
+    }
+
    
+  
+        public YukonMoose(String name){
+<span class="nc" id="L28">        super(name);</span>
+<span class="nc" id="L29">    }</span>
+    public void size(){
+<span class="nc" id="L31">        System.out.println(&quot; I'm 6 feet tall....&quot;+this.name);</span>
+<span class="nc" id="L32">    }</span>
+    public void survive(){
+<span class="nc" id="L34">        System.out.println(&quot; I can survive under 80 degree celsius&quot;);</span>
+<span class="nc" id="L35">    }</span>
+    public void behaviour(){
+<span class="nc" id="L37">        System.out.println(&quot; I can be very aggresive&quot;);</span>
+<span class="nc" id="L38">    }</span>
+    public float height(int feet, float inches){
+<span class="nc" id="L40">        return feet+inches;</span>
+    }
+    public void tHeight(){
+<span class="nc" id="L43">        System.out.println(&quot;YukonMoose height:&quot;+ height(7, (float) 0.6));</span>
+<span class="nc" id="L44">    }</span>
+  
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

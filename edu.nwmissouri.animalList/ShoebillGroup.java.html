@@ -10,25 +10,25 @@ import java.util.ArrayList;
      private static ArrayList&lt;Shoebill&gt; myGroup;
      
      public static int create() {
-<span class="nc" id="L13">        myGroup = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L13">        myGroup = new ArrayList&lt;&gt;();</span>
 
-<span class="nc" id="L15">        myGroup.add(new Shoebill(&quot;Mike&quot;));</span>
-<span class="nc" id="L16">        myGroup.add(new Shoebill(&quot;Afro&quot;));</span>
-<span class="nc" id="L17">        myGroup.add(new Shoebill(&quot;Sasha&quot;));</span>
+<span class="fc" id="L15">        myGroup.add(new Shoebill(&quot;Mike&quot;));</span>
+<span class="fc" id="L16">        myGroup.add(new Shoebill(&quot;Afro&quot;));</span>
+<span class="fc" id="L17">        myGroup.add(new Shoebill(&quot;Sasha&quot;));</span>
 
-<span class="nc" id="L19">        return myGroup.size();</span>
+<span class="fc" id="L19">        return myGroup.size();</span>
     }
       public static void run() {
-<span class="nc" id="L22">        System.out.println(&quot;------------------------------------------&quot;);</span>
-<span class="nc" id="L23">        System.out.println(&quot;Hey - look at the Shoebill!&quot;);</span>
-<span class="nc bnc" id="L24" title="All 2 branches missed.">        for (Shoebill shoebill : myGroup) {</span>
-<span class="nc" id="L25">            shoebill.speak();</span>
-<span class="nc" id="L26">            shoebill.move();</span>
-<span class="nc" id="L27">        }</span>
+<span class="fc" id="L22">        System.out.println(&quot;------------------------------------------&quot;);</span>
+<span class="fc" id="L23">        System.out.println(&quot;Hey - look at the Shoebill!&quot;);</span>
+<span class="fc bfc" id="L24" title="All 2 branches covered.">        for (Shoebill shoebill : myGroup) {</span>
+<span class="fc" id="L25">            shoebill.speak();</span>
+<span class="fc" id="L26">            shoebill.move();</span>
+<span class="fc" id="L27">        }</span>
 
-<span class="nc" id="L29">        System.out.println(&quot;Nice Shoebill - that was fun!&quot;);</span>
-<span class="nc" id="L30">        System.out.println(&quot;---------------------------------------&quot;);</span>
-<span class="nc" id="L31">    }</span>
+<span class="fc" id="L29">        System.out.println(&quot;Nice Shoebill - that was fun!&quot;);</span>
+<span class="fc" id="L30">        System.out.println(&quot;---------------------------------------&quot;);</span>
+<span class="fc" id="L31">    }</span>
     
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

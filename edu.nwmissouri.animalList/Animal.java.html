@@ -13,6 +13,7 @@ public abstract class Animal {
      * protected - only subclasses can use it.
      */
 <span class="fc" id="L15">    protected String name = &quot;no name&quot;;</span>
+    
 
     /**
      * Animals have an associated gender which may be unknown.
@@ -26,25 +27,21 @@ public abstract class Animal {
      *
      * @param name - the name of this instance of an animal
      */
-<span class="fc" id="L29">    public Animal(String name) {</span>
-<span class="fc" id="L30">        this.name = name;</span>
-<span class="fc" id="L31">        this.gender = AnimalGender.UNKNOWN;</span>
+<span class="fc" id="L30">    public Animal(String name) {</span>
+<span class="fc" id="L31">        this.name = name;</span>
+<span class="fc" id="L32">        this.gender = AnimalGender.UNKNOWN;</span>
 
-<span class="fc" id="L33">    }</span>
-
-    /**
-     * speak() - general method for animal utterance
-     */
-    public void speak() {
-<span class="nc" id="L39">        System.out.println(&quot;Generic animal sound&quot;);</span>
-<span class="nc" id="L40">    }</span>
+<span class="fc" id="L34">    }</span>
 
     /**
-     * move() - general method for animal movement
+     * abstract speak() - has no implementation
      */
-    public void move() {
-<span class="nc" id="L46">        System.out.println(&quot;Generic animal movement&quot;);</span>
-<span class="nc" id="L47">    }</span>
+    public abstract void speak();
+
+    /**
+     * abstract move() - has no implementation
+     */
+    public abstract void move();
 
     /**
      * Get animal's name.
@@ -52,7 +49,7 @@ public abstract class Animal {
      * @return name
      */
     public String getName() {
-<span class="fc" id="L55">        return name;</span>
+<span class="fc" id="L52">        return name;</span>
     }
 
     /**
@@ -62,7 +59,7 @@ public abstract class Animal {
      * @return the gender
      */
     public AnimalGender getGender() {
-<span class="nc" id="L65">        return gender;</span>
+<span class="nc" id="L62">        return gender;</span>
     }
 
     /**
@@ -72,8 +69,8 @@ public abstract class Animal {
      * @param gender the gender to set
      */
     public void setGender(AnimalGender gender) {
-<span class="nc" id="L75">        this.gender = gender;</span>
-<span class="nc" id="L76">    }</span>
+<span class="nc" id="L72">        this.gender = gender;</span>
+<span class="nc" id="L73">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>

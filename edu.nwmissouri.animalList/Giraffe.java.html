@@ -6,27 +6,57 @@
 package edu.nwmissouri.animalList;
 
 /**
- *
+ *Giraffe class (derived subclass of the superclass Animal)
+ * 
  * @author Himaja Reddy Maddi
  */
 public class Giraffe extends Animal {
 
+    /**
+     * Giraffe constructor
+     *
+     * @param name - the name of this Giraffe
+     */
     public Giraffe(String name) {
-<span class="nc" id="L15">        super(name);</span>
-<span class="nc" id="L16">    }</span>
+<span class="fc" id="L21">        super(name);</span>
+<span class="fc" id="L22">    }</span>
 
     @Override
     public void speak() {
-<span class="nc" id="L20">        System.out.println(&quot;I'm Giraffe&quot;);</span>
-<span class="nc" id="L21">    }</span>
+<span class="fc" id="L26">        System.out.printf(&quot;I'm %s. I'm giraffe!&quot;, this.name);</span>
+<span class="fc" id="L27">    }</span>
 
     @Override
     public void move() {
-<span class="nc" id="L25">        System.out.println(&quot;When I move, I walk, walk, walk.&quot;);</span>
+<span class="fc" id="L31">        System.out.println(&quot;When I move, I run, run, run.&quot;);</span>
 
-<span class="nc" id="L27">    }</span>
+<span class="fc" id="L33">    }</span>
+
+    /**
+     * Custom Giraffe function for performing an operation
+     *
+     * 
+     */
+    public void multiply() {
+<span class="nc" id="L41">        double a = 1.5;</span>
+<span class="nc" id="L42">        int b = 4;</span>
+<span class="nc" id="L43">        double c = getGiraffeMultiplication(a, b);</span>
+<span class="nc" id="L44">        System.out.printf(&quot;I know GiraffeMultiplication! %4.2f times %d is %4.2f \n&quot;, a, b, c);</span>
+<span class="nc" id="L45">    }</span>
+
+    /**
+     * Custom Giraffe function 
+     *
+     * @param leg1 double input
+     * @param leg2 int input
+     * @return double sum
+     */
+    public double getGiraffeMultiplication(double leg1, int leg2) {
+<span class="fc" id="L55">        return leg1 * leg2;</span>
+    }
 
    
+
 
 }
 

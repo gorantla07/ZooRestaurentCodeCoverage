@@ -16,29 +16,30 @@ import java.util.ArrayList;
      * @return the number of animals in the group
      */
     public static int create() {
-<span class="nc" id="L19">        myLigerGroup = new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L19">        myLigerGroup = new ArrayList&lt;&gt;();</span>
         
-<span class="nc" id="L21">        Liger l = new Liger(&quot;Liger1&quot;);</span>
-<span class="nc" id="L22">        myLigerGroup.add(l);</span>
-<span class="nc" id="L23">        myLigerGroup.add(new Liger(&quot;Liger2&quot;));</span>
-<span class="nc" id="L24">        myLigerGroup.add(new Liger(&quot;Liger3&quot;));</span>
+<span class="fc" id="L21">        Liger l = new Liger(&quot;Liger1&quot;);</span>
+<span class="fc" id="L22">        myLigerGroup.add(l);</span>
+<span class="fc" id="L23">        myLigerGroup.add(new Liger(&quot;Liger2&quot;));</span>
+<span class="fc" id="L24">        myLigerGroup.add(new Liger(&quot;Liger3&quot;));</span>
 
-<span class="nc" id="L26">        return myLigerGroup.size();</span>
+<span class="fc" id="L26">        return myLigerGroup.size();</span>
     }
 
     /**
      * Run (simulate) the group doing things
      */
     public static void run() {
-<span class="nc" id="L33">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
-<span class="nc" id="L34">        System.out.println(&quot;Hey i am Liger!&quot;);</span>
-<span class="nc" id="L35">        myLigerGroup.forEach(liger -&gt; {</span>
-<span class="nc" id="L36">            liger.speak();</span>
-<span class="nc" id="L37">            liger.move();</span>
-<span class="nc" id="L38">        });</span>
-<span class="nc" id="L39">        System.out.println(&quot;Liger - cross breed of lion and tiger&quot;);</span>
-<span class="nc" id="L40">        System.out.println(&quot;Crossbreed of lion and tiger&quot;);</span>
-<span class="nc" id="L41">    }</span>
+<span class="fc" id="L33">        System.out.println(&quot;AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA&quot;);</span>
+<span class="fc" id="L34">        System.out.println(&quot;Hey i am Liger!&quot;);</span>
+<span class="fc" id="L35">        myLigerGroup.forEach(liger -&gt; {</span>
+<span class="fc" id="L36">            liger.speak();</span>
+<span class="fc" id="L37">            liger.move();</span>
+<span class="fc" id="L38">            liger.eat();</span>
+<span class="fc" id="L39">        });</span>
+<span class="fc" id="L40">        System.out.println(&quot;Liger - cross breed of lion and tiger&quot;);</span>
+<span class="fc" id="L41">        System.out.println(&quot;Crossbreed of lion and tiger&quot;);</span>
+<span class="fc" id="L42">    }</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.7.202105040129</span></div></body></html>
