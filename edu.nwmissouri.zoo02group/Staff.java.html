@@ -11,7 +11,7 @@ import java.util.ArrayList;
  * @author Manoj Gorantla
  */
 public class Staff extends Person {
-<span class="fc" id="L14">     private static ArrayList&lt;Staff&gt; StaffList=new ArrayList&lt;&gt;();</span>
+<span class="fc" id="L14">     private static ArrayList&lt;Staff&gt; staffList=new ArrayList&lt;&gt;();</span>
      private int staffId;
     public Staff(int staffId,String firstName, String lastName, int age, String gender) {
 <span class="fc" id="L17">        super(firstName, lastName, age, gender);</span>
@@ -21,10 +21,10 @@ public class Staff extends Person {
      * Added the staff data to create method.
      */
      public static void creat(){  
-<span class="fc" id="L24">       StaffList.add(new Staff(1001,&quot;Uday&quot;,&quot;allipi&quot;,26,&quot;Male&quot;));</span>
-<span class="fc" id="L25">       StaffList.add(new Staff(1002,&quot;Rohit&quot;,&quot;Gangguru&quot;,24,&quot;Male&quot;));</span>
-<span class="fc" id="L26">       StaffList.add(new Staff(1003,&quot;Nikhil&quot;,&quot;Nagabandi&quot;,25,&quot;Male&quot;));</span>
-<span class="fc" id="L27">       StaffList.add(new Staff(1004,&quot;Parasana&quot;,&quot;allipi&quot;,22,&quot;Male&quot;));</span>
+<span class="fc" id="L24">       staffList.add(new Staff(1001,&quot;Uday&quot;,&quot;allipi&quot;,26,&quot;Male&quot;));</span>
+<span class="fc" id="L25">       staffList.add(new Staff(1002,&quot;Rohit&quot;,&quot;Gangguru&quot;,24,&quot;Male&quot;));</span>
+<span class="fc" id="L26">       staffList.add(new Staff(1003,&quot;Nikhil&quot;,&quot;Nagabandi&quot;,25,&quot;Male&quot;));</span>
+<span class="fc" id="L27">       staffList.add(new Staff(1004,&quot;Parasana&quot;,&quot;allipi&quot;,22,&quot;Male&quot;));</span>
 <span class="fc" id="L28">   }</span>
      
      /**
@@ -33,12 +33,12 @@ public class Staff extends Person {
       */
 
     public static ArrayList&lt;Staff&gt; getStaffList() {
-<span class="fc" id="L36">        return StaffList;</span>
+<span class="fc" id="L36">        return staffList;</span>
     }
     
 
-    public static void setStaffList(ArrayList&lt;Staff&gt; StaffList) {
-<span class="fc" id="L41">        Staff.StaffList = StaffList;</span>
+    public static void setStaffList(ArrayList&lt;Staff&gt; staffList) {
+<span class="fc" id="L41">        Staff.staffList = staffList;</span>
 <span class="fc" id="L42">    }</span>
     
     /**
